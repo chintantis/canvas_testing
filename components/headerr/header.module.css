@@ -1,0 +1,18 @@
+.button {
+  background: linear-gradient(#8a5ef7, #492dac);
+  border: 0;
+  padding: 8px 8px;
+  line-height: 1.75;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+}
+.appbar {
+  color: rgba(0, 0, 0, 0.87);
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+}
+.bgimg {
+  background-image: url('../../public/bg.jpg');
+}
