@@ -47,8 +47,8 @@ const Footer = () => {
         <Grid container>
           <Grid item lg={4} sx={{ margin: "auto" }}>
             <div>
-              <Box pt={2}>
-                <Typography fontSize={8} pl={9}>
+              <Box pt={9}>
+                <Typography fontSize={8} pl={9} sx={{fontFamily:'Poppins'}}>
                   BRAND MARKETING TEAM
                 </Typography>
                 <Cardtext pt={2.5}>
@@ -67,7 +67,7 @@ const Footer = () => {
             {sections.map((section, index) => (
               <Box key={index}>
                 <ul>
-                  <li><Cardtext2>{section.title}</Cardtext2></li>
+                  <li><Cardtext2 style={{paddingBottom:10 , fontFamily:'Kumbh Sans'}}>{section.title}</Cardtext2></li>
                   {section.items.map((item, idx) => (
                     <li key={idx}><Cardtext>{item}</Cardtext></li>
                   ))}

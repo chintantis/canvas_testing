@@ -9,17 +9,17 @@ import '@fontsource/poppins';
 
 export const Medium_text = styled(Typography)(({ }) => ({
   color: 'black',
-  fontSize: "26px",
+  fontSize: "49px",
   textAlign: 'center',
   fontWeight: 600,
   fontFamily: "Kumbh Sans",
   "@media (max-width: 767px)": {
-    fontSize: "24px",
+    fontSize: "45px",
   },
 }));
 export const Medium_text2 = styled(Typography)(({ }) => ({
   color: 'black',
-  fontSize: "35px",
+  fontSize: "50px",
   fontWeight: 600,
   fontFamily: "Kumbh Sans",
   "@media (max-width: 767px)": {
@@ -28,7 +28,7 @@ export const Medium_text2 = styled(Typography)(({ }) => ({
 }));
 export const Medium_text3 = styled(Typography)(({ }) => ({
   color: 'black',
-  fontSize: "20px",
+  fontSize: "26px",
   fontWeight: 600,
   fontFamily: "Kumbh Sans",
   "@media (max-width: 767px)": {
@@ -38,12 +38,14 @@ export const Medium_text3 = styled(Typography)(({ }) => ({
 
 export const Cardtext = styled(Typography)(({ }) => ({
   color: '#474747',
-  fontSize: "13px",
+  fontSize: "17px",
+  whiteSpace:'nowrap',
   fontWeight: 500,
   fontFamily: "Poppins",
 }));
 export const Cardtext2 = styled(Typography)(({ }) => ({
   color: 'black',
-  fontSize: "12px",
+  fontSize: "16px",
   fontWeight: 600,
+  fontFamily: "Kumbh Sans",
 }));

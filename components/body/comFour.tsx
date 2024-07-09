@@ -73,9 +73,9 @@ const ComFour = () => {
 
                         </Box>
                     </Box>
-                    <Grid container>
+                    {/* <Grid container>
                         <Grid item lg={6}>
-                            <Box height={240} width={170} sx={{background:'white',boxShadow:'0px 0px 3px -1px black'}}>
+                            <Box height={240} width={200} sx={{ background: 'white', boxShadow: '0px 0px 3px -1px black', borderRadius: 2 }}>
                                 <Typography textAlign={'center'}>Vendors</Typography>
                                 <Medium_text>$0/Month</Medium_text>
                             </Box>
@@ -86,7 +86,7 @@ const ComFour = () => {
                                 <Medium_text>$70/Month</Medium_text>
                             </Box>
                         </Grid>
-                    </Grid>
+                    </Grid> */}
                 </Box>
             </Box>
         </>

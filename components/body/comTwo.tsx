@@ -17,7 +17,7 @@ const ComTwo = () => {
                 </Box>
                 <Image
                     src={'/Content.jpg'}
-                    width={1210}
+                    width={1200}
                     height={500}
                     alt='img'
                 />
