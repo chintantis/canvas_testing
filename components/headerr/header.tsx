@@ -4,11 +4,10 @@ import { Box, Button, Grid, Rating, Toolbar, Typography } from "@mui/material";
 import style from './header.module.css';
 import { Cardtext, Cardtext2, Medium_text, Medium_text2 } from "../typography";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
-import AppleIcon from '@mui/icons-material/Apple';  
+import AppleIcon from '@mui/icons-material/Apple';
 import '@fontsource/kumbh-sans';
 import '@fontsource/poppins';
-import '@fontsource/Montserrat';
-
+import '@fontsource/montserrat';
 
 
 const Header = () => {
@@ -42,7 +41,7 @@ const Header = () => {
                   </Button>
                 ))}
                 <button
-                  style={{ marginLeft: 70,marginRight:85, fontSize: 11, fontWeight: 400, fontFamily: 'Kumbh Sans' }}
+                  style={{ marginLeft: 70, marginRight: 85, fontSize: 11, fontWeight: 400, fontFamily: 'Kumbh Sans' }}
                   className={style.button}> {headphone} CONTACT US</button>
               </Box>
             </Toolbar>
@@ -50,7 +49,7 @@ const Header = () => {
           <Grid container>
             <Grid item lg={5}>
               <Box>
-                <Typography fontSize={56} sx={{fontWeight:700}} pt={12} fontFamily={'Kumbh Sans'} >BRIDGING <br />
+                <Typography fontSize={56} sx={{ fontWeight: 700 }} pt={12} fontFamily={'Kumbh Sans'} >BRIDGING <br />
                   THE GAP</Typography>
               </Box>
               <Typography fontSize={20} whiteSpace={'nowrap'} color={'#474747'} lineHeight={2} fontFamily={'Poppins'}>Empowering  connection between Clients and Vendors</Typography>
@@ -64,7 +63,7 @@ const Header = () => {
                       <Typography fontSize={12} fontFamily={'Kumbh Sans'} fontWeight={100}>
                         Available on the
                       </Typography>
-                      <Typography fontSize={21} fontWeight={600} fontFamily={'Montserrat'}>
+                      <Typography fontSize={21} fontWeight={600} fontFamily="'Montserrat', sans-serif">
                         Google Play
                       </Typography>
                     </Box>
@@ -79,7 +78,7 @@ const Header = () => {
                       <Typography fontSize={12} fontFamily={'Kumbh Sans'} fontWeight={100}>
                         Download on the
                       </Typography>
-                      <Typography fontSize={21} fontWeight={600} fontFamily={'Montserrat'}>
+                      <Typography fontSize={21} fontWeight={600} fontFamily="'Montserrat', sans-serif">
                         App Store
                       </Typography>
                     </Box>
@@ -90,15 +89,15 @@ const Header = () => {
               <Box display="flex" gap={10.5} mt={6} pb={8}>
                 <Box>
                   <Medium_text2>16k+</Medium_text2>
-                  <Cardtext sx={{fontSize:19}}>Active users</Cardtext>
+                  <Cardtext sx={{ fontSize: 19 }}>Active users</Cardtext>
                 </Box>
                 <Box>
                   <Medium_text2>08k+</Medium_text2>
-                  <Cardtext sx={{fontSize:19}}>Property sales</Cardtext>
+                  <Cardtext sx={{ fontSize: 19 }}>Property sales</Cardtext>
                 </Box>
                 <Box>
                   <Medium_text2>12k+</Medium_text2>
-                  <Cardtext sx={{fontSize:19}}>Reviews</Cardtext>
+                  <Cardtext sx={{ fontSize: 19 }}>Reviews</Cardtext>
                 </Box>
               </Box>
             </Grid>
