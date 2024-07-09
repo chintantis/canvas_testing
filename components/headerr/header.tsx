@@ -9,7 +9,6 @@ import '@fontsource/kumbh-sans';
 import '@fontsource/poppins';
 import '@fontsource/montserrat';
 
-
 const Header = () => {
   const navItems = ['Home', 'About', 'investors', 'Contact'];
   const headphone = (
