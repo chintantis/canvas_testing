@@ -1,10 +1,29 @@
-body{
-    padding: 0;
-    margin: 0;
+body {
+  padding: 0;
+  margin: 0;
 }
-ul{
-	list-style: none;
+ul {
+  list-style: none;
 }
-ol{
-	list-style: none;
+ol {
+  list-style: none;
+}
+.container {
+  width: 1200px;
+  margin: auto;
+}
+.button {
+  background: linear-gradient(#8a5ef7, #492dac);
+  border: 0;
+  padding: 10px 23px;
+  line-height: 2;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+.Cardtext {
+  font-family: "Poppins", sans-serif;
+}
+.Medium_text2 {
+  font-family: "Kumbh Sans", sans-serif;
 }
