@@ -7,19 +7,18 @@ interface GooglePlayBadgeProps {
     preText: string;
     mainText: string;
 }
-
 const GooglePlayBadge: React.FC<GooglePlayBadgeProps> = ({ icon, preText, mainText }) => {
     return (
         <Grid
-            border={'2px solid gray'}
+            border={'2px solid #30475E'}
             sx={{ background: 'white' }}
             borderRadius={3}
             item
             lg={5}
-            height={59}
+            height={62}
             mr={3}
         >
-            <Box display={'flex'} p={'7px 15px'}>
+            <Box display={'flex'} p={'7px 16px'}>
                 <Box display={"flex"} alignItems={"center"}>
                     {icon}
                 </Box>

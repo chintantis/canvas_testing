@@ -22,7 +22,6 @@ const GoldPlanCard: React.FC<GoldPlanCardProps> = ({ title, price, planType, des
             </defs>
         </svg>
     );
-
     return (
         <Grid item lg={6} >
             <Box height={620} width={440} sx={{ background: 'white', boxShadow: '0px 0px 3px -1px #e4e1e1', borderRadius: 4, marginBottom: 9 }}>

@@ -2,9 +2,8 @@
 import {
   Typography
 } from "@mui/material";
-
 import { styled } from "@mui/material";
-import '@fontsource/kumbh-sans'; 
+import '@fontsource/kumbh-sans';
 import '@fontsource/poppins';
 
 export const Medium_text = styled(Typography)(({ }) => ({
