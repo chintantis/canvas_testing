@@ -8,6 +8,7 @@ import AppleIcon from '@mui/icons-material/Apple';
 import '@fontsource/kumbh-sans';
 import '@fontsource/poppins';
 import '@fontsource/montserrat';
+import GooglePlayBadge from "../button";
 
 const Header = () => {
   const navItems = ['Home', 'About', 'investors', 'Contact'];
@@ -17,7 +18,7 @@ const Header = () => {
     </svg>
   )
   const icon = (
-    <svg fill="none" height="35" viewBox="0 0 15 15" width="42" style={{ marginLeft: 19 }} xmlns="http://www.w3.org/2000/svg"><path d="M1.25097 0.0664289C1.40622 -0.0227402 1.59729 -0.0220988 1.75194 0.0681106L9.59402 4.64266L7.16668 6.82726L1 1.27725V0.5C1 0.320967 1.09572 0.155598 1.25097 0.0664289Z" fill="#1E231C" /><path d="M1 2.62262V12.3773L6.41925 7.49994L1 2.62262Z" fill="#1E231C" /><path d="M1 13.7226V14.5C1 14.679 1.09572 14.8444 1.25097 14.9336C1.40622 15.0227 1.59729 15.0221 1.75194 14.9319L9.59409 10.3573L7.16668 8.17262L1 13.7226Z" fill="#1E231C" /><path d="M10.5011 9.82822L13.7519 7.93189C13.9055 7.84228 14 7.67783 14 7.5C14 7.32217 13.9055 7.15772 13.7519 7.06811L10.501 5.17173L7.9141 7.49994L10.5011 9.82822Z" fill="#1E231C" />
+    <svg fill="none" height="39" viewBox="0 0 15 15" width="47" xmlns="http://www.w3.org/2000/svg"><path d="M1.25097 0.0664289C1.40622 -0.0227402 1.59729 -0.0220988 1.75194 0.0681106L9.59402 4.64266L7.16668 6.82726L1 1.27725V0.5C1 0.320967 1.09572 0.155598 1.25097 0.0664289Z" fill="#1E231C" /><path d="M1 2.62262V12.3773L6.41925 7.49994L1 2.62262Z" fill="#1E231C" /><path d="M1 13.7226V14.5C1 14.679 1.09572 14.8444 1.25097 14.9336C1.40622 15.0227 1.59729 15.0221 1.75194 14.9319L9.59409 10.3573L7.16668 8.17262L1 13.7226Z" fill="#1E231C" /><path d="M10.5011 9.82822L13.7519 7.93189C13.9055 7.84228 14 7.67783 14 7.5C14 7.32217 13.9055 7.15772 13.7519 7.06811L10.501 5.17173L7.9141 7.49994L10.5011 9.82822Z" fill="#1E231C" />
     </svg>
   );
   return (
@@ -53,49 +54,28 @@ const Header = () => {
               </Box>
               <Typography fontSize={20} whiteSpace={'nowrap'} color={'#474747'} lineHeight={2} fontFamily={'Poppins'}>Empowering  connection between Clients and Vendors</Typography>
               <Grid container mt={5}>
-                <Grid border={'2px solid gray'} sx={{ background: 'white' }} borderRadius={3} item lg={5.5} height={59}>
-                  <Box display={'flex'} p={0.4}>
-                    <Box display={"flex"} alignItems={"center"} >
-                      {icon}
-                    </Box>
-                    <Box color={'#1E231C'}>
-                      <Typography fontSize={12} fontFamily={'Kumbh Sans'} fontWeight={100}>
-                        Available on the
-                      </Typography>
-                      <Typography fontSize={21} fontWeight={600} fontFamily="'Montserrat', sans-serif">
-                        Google Play
-                      </Typography>
-                    </Box>
-                  </Box>
-                </Grid>
-                <Grid border={'2px solid gray'} sx={{ background: 'white' }} borderRadius={3} item lg={5.5} ml={5} height={59}>
-                  <Box display={'flex'} p={0.4}>
-                    <Box display={"flex"} alignItems={"center"} >
-                      <AppleIcon sx={{ fontSize: 45, ml: 3, color: '#1E231C' }} />
-                    </Box>
-                    <Box color={'#1E231C'}>
-                      <Typography fontSize={12} fontFamily={'Kumbh Sans'} fontWeight={100}>
-                        Download on the
-                      </Typography>
-                      <Typography fontSize={21} fontWeight={600} fontFamily="'Montserrat', sans-serif">
-                        App Store
-                      </Typography>
-                    </Box>
-                  </Box>
-                </Grid>
-
+                <GooglePlayBadge
+                  icon={icon}
+                  preText="Available on the"
+                  mainText="Google Play"
+                />
+                <GooglePlayBadge
+                  icon={<AppleIcon style={{ fontSize: 45 }} />}
+                  preText="Download on the"
+                  mainText="App Store"
+                />
               </Grid>
               <Box display="flex" gap={10.5} mt={6} pb={8}>
                 <Box>
-                  <Medium_text2>16k+</Medium_text2>
-                  <Cardtext sx={{ fontSize: 19 }}>Active users</Cardtext>
+                  <Medium_text2>16K+</Medium_text2>
+                  <Cardtext sx={{ fontSize: 19, whiteSpace: 'nowrap' }} >Active users</Cardtext>
                 </Box>
                 <Box>
-                  <Medium_text2>08k+</Medium_text2>
-                  <Cardtext sx={{ fontSize: 19 }}>Property sales</Cardtext>
+                  <Medium_text2>08K+</Medium_text2>
+                  <Cardtext sx={{ fontSize: 19, whiteSpace: 'nowrap' }}>Property sales</Cardtext>
                 </Box>
                 <Box>
-                  <Medium_text2>12k+</Medium_text2>
+                  <Medium_text2>12K+</Medium_text2>
                   <Cardtext sx={{ fontSize: 19 }}>Reviews</Cardtext>
                 </Box>
               </Box>

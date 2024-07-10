@@ -39,7 +39,6 @@ export const Medium_text3 = styled(Typography)(({ }) => ({
 export const Cardtext = styled(Typography)(({ }) => ({
   color: '#474747',
   fontSize: "17px",
-  whiteSpace:'nowrap',
   fontWeight: 500,
   fontFamily: "Poppins",
 }));
