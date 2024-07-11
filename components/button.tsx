@@ -1,5 +1,6 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
+import { Cardtext, Medium_text3 } from './typography';
 
 // Define the props interface
 interface GooglePlayBadgeProps {
@@ -21,17 +22,17 @@ const GooglePlayBadge: React.FC<GooglePlayBadgeProps> = ({ icon, preText, mainTe
             height={65}
             mr={3}
         >
-            <Box display={'flex'} p={'11px 16px'}>
+            <Box display={'flex'} p={'10px 16px'}>
                 <Box display={"flex"} alignItems={"center"}>
                     {icon}
                 </Box>
                 <Box color={'#1E231C'}>
-                    <Typography fontSize={14} fontFamily={"'Kumbh Sans', 'sans-serif'"} fontWeight={400} lineHeight={0.7}>
+                    <Cardtext style={{ fontSize: 15, fontWeight: 300 }} fontFamily={"'Kumbh Sans', 'sans-serif'"} whiteSpace={'nowrap'} fontWeight={400} lineHeight={0.7}>
                         {preText}
-                    </Typography>
-                    <Typography fontSize={22} fontWeight={600} whiteSpace={'nowrap'} fontFamily="'Montserrat', sans-serif">
+                    </Cardtext>
+                    <Medium_text3 style={{ fontSize: 22, fontFamily: "'Montserrat', sans-serif" }} whiteSpace={'nowrap'}>
                         {mainText}
-                    </Typography>
+                    </Medium_text3>
                 </Box>
             </Box>
         </Grid>

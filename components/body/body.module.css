@@ -1,7 +1,9 @@
 .bgimg {
-  background-image: url("../../public/bg2.jpg");
+  background-image: url("../../public/Logo.png");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
+  background-position: center;
+  
 }
 .gradient {
   background: linear-gradient(#8a5ef7, #492dac);
@@ -10,7 +12,25 @@
 }
 
 .hoverBorder:hover {
-  border:2px solid transparent;
-  background: linear-gradient( #8a5ef7, #492dac);
+  border: 2px solid transparent;
+  background: linear-gradient(#8a5ef7, #492dac);
   border-radius: 16px;
+}
+.bgimg2 {
+  background-image: url("../../public/bg3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimgg {
+  background-image: url("../../public/Logo.png");
+  background-repeat: no-repeat;
+  background-size: inherit;
+}
+.bgcolor {
+  background: #4ca1ff;
+}
+
+.background {
+  background: linear-gradient(#8a5ef7, #492dac);
 }

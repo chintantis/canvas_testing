@@ -46,12 +46,12 @@ const Header = () => {
           <Grid container>
             <Grid item lg={5} md={6} xs={6}>
               <Box>
-                <Typography className="gap" fontSize={56} fontWeight={700} pt={12} fontFamily={"'Kumbh Sans', 'sans-serif'"} width={'60%'} lineHeight={1.2}>
+                <Medium_text className={style.gap} style={{ textAlign: 'left',fontWeight:800 }} fontSize={56} fontWeight={700} pt={12} width={'60%'} lineHeight={1.2}>
                   BRIDGING
                   THE GAP
-                </Typography>
+                </Medium_text>
               </Box>
-              <Typography fontSize={20} whiteSpace={'nowrap'} color={'#474747'} lineHeight={2} fontFamily={"'Poppins', 'sans-serif'"} >Empowering  connection between Clients and Vendors</Typography>
+              <Cardtext fontSize={20} whiteSpace={'nowrap'} color={'#474747'} lineHeight={2} fontFamily={"'Poppins', 'sans-serif'"} >Empowering  connection between Clients and Vendors</Cardtext>
               <Grid container mt={5} width={'110%'}>
                 <GooglePlayBadge
                   icon={icon}

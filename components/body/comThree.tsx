@@ -1,6 +1,6 @@
 import { Box, Grid } from '@mui/material';
 import React from 'react'
-import { Cardtext, Medium_text, Medium_text3 } from '../typography';
+import { Cardtext, Medium_text } from '../typography';
 import FeatureCard from '../iconbox';
 
 const ComThree = () => {

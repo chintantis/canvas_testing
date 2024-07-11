@@ -71,7 +71,7 @@ const ComFour = () => {
     }));
     return (
         <>
-            <Box className={style.bgimg} >
+            <Box className={style.bgimg} pb={9}>
                 <Box className='container'>
                     <Box pt={9} >
                         <Medium_text>

@@ -2,7 +2,7 @@ body {
   padding: 0;
   margin: 0;
 }
-a{
+a {
   text-decoration: none;
 }
 ul {
@@ -23,6 +23,7 @@ ol {
   line-height: 2;
   border-radius: 6px;
   color: white;
+  font-family: "Kumbh San", sans-serif;
   cursor: pointer;
 }
 .Cardtext {
