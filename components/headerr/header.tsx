@@ -46,7 +46,7 @@ const Header = () => {
           <Grid container>
             <Grid item lg={5} md={6} xs={6}>
               <Box>
-                <Typography fontSize={56} fontWeight={700} pt={12} fontFamily={"'Kumbh Sans', 'sans-serif'"} width={'60%'} lineHeight={1.2}>
+                <Typography className="gap" fontSize={56} fontWeight={700} pt={12} fontFamily={"'Kumbh Sans', 'sans-serif'"} width={'60%'} lineHeight={1.2}>
                   BRIDGING
                   THE GAP
                 </Typography>

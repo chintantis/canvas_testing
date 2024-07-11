@@ -3,3 +3,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.gradient {
+  background: linear-gradient(#8a5ef7, #492dac);
+  background-clip: text;
+  color: transparent;
+}
+
+.hoverBorder:hover {
+  border:2px solid transparent;
+  background: linear-gradient( #8a5ef7, #492dac);
+  border-radius: 16px;
+}

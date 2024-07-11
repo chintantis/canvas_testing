@@ -13,14 +13,14 @@ export const Medium_text = styled(Typography)(({ }) => ({
   fontWeight: 600,
   fontFamily: "'Kumbh Sans', 'sans-serif'",
   "@media (max-width: 767px)": {
-    fontSize: "45px",
+    fontSize: "20px",
   },
 }));
 export const Medium_text2 = styled(Typography)(({ }) => ({
   color: 'black',
   fontSize: "50px",
   fontWeight: 600,
- fontFamily: "'Kumbh Sans', 'sans-serif'",
+  fontFamily: "'Kumbh Sans', 'sans-serif'",
   "@media (max-width: 767px)": {
     fontSize: "30px",
   },
@@ -31,7 +31,7 @@ export const Medium_text3 = styled(Typography)(({ }) => ({
   fontWeight: 600,
   fontFamily: "'Kumbh Sans', 'sans-serif'",
   "@media (max-width: 767px)": {
-    fontSize: "20px",
+    fontSize: "16px",
   },
 }));
 
@@ -39,11 +39,17 @@ export const Cardtext = styled(Typography)(({ }) => ({
   color: '#474747',
   fontSize: "17px",
   fontWeight: 500,
-  fontFamily: "'Poppins', 'sans-serif'"
+  fontFamily: "'Poppins', 'sans-serif'",
+  "@media (max-width: 767px)": {
+    fontSize: "10px",
+  },
 }));
 export const Cardtext2 = styled(Typography)(({ }) => ({
   color: 'black',
   fontSize: "16px",
   fontWeight: 600,
- fontFamily: "'Kumbh Sans', 'sans-serif'"
+  fontFamily: "'Kumbh Sans', 'sans-serif'",
+  "@media (max-width: 767px)": {
+    fontSize: "10px",
+  },
 }));

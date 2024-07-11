@@ -33,7 +33,7 @@ const ComFour = () => {
                 transform: 'translateX(16px)',
                 color: '#fff',
                 '& + .MuiSwitch-track': {
-                    backgroundColor: theme.palette.mode === 'dark' ? '#8A5EF7' : '#492DAC',
+                    background: theme.palette.mode === 'dark' ? '#8A5EF7' : 'linear-gradient(#8A5EF7,#492DAC)',
                     opacity: 1,
                     border: 0,
                 },
@@ -71,7 +71,7 @@ const ComFour = () => {
     }));
     return (
         <>
-            <Box className={style.bgimg}>
+            <Box className={style.bgimg} >
                 <Box className='container'>
                     <Box pt={9} >
                         <Medium_text>
@@ -83,11 +83,11 @@ const ComFour = () => {
                                 control={<IOSSwitch defaultChecked />}
                                 label=""
                             />
-                            <Typography color={'#492DAC'} paddingTop={1} fontSize={19} fontWeight={600} fontFamily={'Kumbh Sans'}>Annual pricing (save 20%)</Typography>
+                            <Typography paddingTop={1} className={style.gradient} fontSize={19} fontWeight={600} fontFamily={'Kumbh Sans'}>Annual pricing (save 20%)</Typography>
                         </Box>
                     </Box>
-                    <Grid container mt={10} gap={4}>
-                        <Grid item lg={0} display={'flex'} marginLeft={4.5} justifyContent={'center'} >
+                    <Grid mt={10} display={'flex'} justifyContent={'space-evenly'}>
+                        <Grid item lg={3} md={3} maxWidth={'37%'} className={style.hoverBorder}>
                             <GoldPlanCard
                                 title="VENDORS"
                                 price="$0/Month"
@@ -96,8 +96,7 @@ const ComFour = () => {
                                 features={item}
                             />
                         </Grid>
-                        <Grid item lg={0} marginRight={10} display={'flex'} justifyContent={'center'}>
-
+                        <Grid item lg={3} md={3} maxWidth={'37%'} className={style.hoverBorder}>
                             <GoldPlanCard
                                 title="SHOPPERS"
                                 price="$70/Month"
@@ -105,8 +104,6 @@ const ComFour = () => {
                                 description="All Exclusive perks and extra benefits for Gold vendors"
                                 features={item}
                             />
-
-
                         </Grid>
                     </Grid>
                 </Box>

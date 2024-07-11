@@ -6,6 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import YouTubeIcon from '@mui/icons-material/YouTube';
+import Link from "next/link";
 
 const Footer = () => {
   const sections = [
@@ -14,24 +15,24 @@ const Footer = () => {
       items: ["company", "About Us", "Blog", "Press Info", "Features", "Successes"],
     },
     {
-      title: "Travellers",
+      title: "TRAVELLERS",
       items: ["Why Travellers", "Enterprise", "Customer Stories", "Pricing", "Security"],
     },
     {
-      title: "Resources",
-      items: ["Download", "Help Center", "Guides", "Events", "Developers", "App Directory"],
+      title: "RESOURCES",
+      items: ["Download", "Help Center", "Guides", "Events", "Developers", "App Directory","Partners"],
     },
     {
-      title: "Extras",
+      title: "EXTRAS",
       items: ["Why Travellers", "Enterprise", "Customer Stories", "Pricing", "Security"],
     },
   ];
 
   const footerLinks = [
-    { name: "Terms & Conditions" },
-    { name: "Privacy Policy" },
-    { name: "Feedback" },
-    { name: "Contact" },
+    { name: "TERMS & CONDITIONS" },
+    { name: "PRIVACY POLICY" },
+    { name: "FEEDBACK" },
+    { name: "CONTACT" },
   ];
 
   const socialIcons = [
@@ -45,15 +46,15 @@ const Footer = () => {
     <>
       <Box className="container">
         <Grid container>
-          <Grid item lg={4} sx={{ margin: "auto" }}>
+          <Grid item lg={4} md={4} xs={4} sx={{ margin: "auto" }}>
             <div>
               <Box pt={9}>
-                <Typography fontSize={8} pl={9} sx={{fontFamily:'Poppins'}}>
+                <Typography fontSize={8} pl={9} sx={{ fontFamily: 'Poppins' }}>
                   BRAND MARKETING TEAM
                 </Typography>
-                <Cardtext pt={2.5}>
+                <Cardtext pt={2.5} style={{fontWeight:400}}> 
                   Lorem ipsum dolor sit amet, consectetur
-                   adipiscing elit, sed do eiusmod tempor.
+                  adipiscing elit, sed do eiusmod tempor.
                 </Cardtext>
               </Box>
               <Box pt={4}>
@@ -63,13 +64,15 @@ const Footer = () => {
               </Box>
             </div>
           </Grid>
-          <Grid item lg={8} style={{ display: "flex", justifyContent: "space-around" }}>
+          <Grid item lg={8} md={8} xs={8} style={{ display: "flex", justifyContent: "space-around" }}>
             {sections.map((section, index) => (
               <Box key={index}>
                 <ul>
-                  <li><Cardtext2 style={{paddingBottom:10 , fontFamily:'Kumbh Sans'}}>{section.title}</Cardtext2></li>
+                  <li><Link href={'#'} style={{ paddingBottom: 10, fontFamily: 'Kumbh Sans'}}>
+                  <Cardtext2>{section.title}</Cardtext2>
+                  </Link></li>
                   {section.items.map((item, idx) => (
-                    <li key={idx}><Cardtext>{item}</Cardtext></li>
+                    <Link href={'#'} key={idx}><Cardtext style={{fontWeight:400,lineHeight:2}}>{item}</Cardtext></Link>
                   ))}
                 </ul>
               </Box>
@@ -78,16 +81,16 @@ const Footer = () => {
         </Grid>
         <Box sx={{ border: '0.75px solid #ebebeb', m: '55px 0' }} ></Box>
         <Grid container mb={8}>
-          <Grid item lg={5}>
-            <Box sx={{ display: "flex" }}>
+          <Grid item lg={5} md={5} xs={5}>
+            <Link href={'#'} style={{ display: "flex",color:'black', fontWeight:400 }}>
               {footerLinks.map((link, index) => (
                 <Typography key={index} whiteSpace={'nowrap'} sx={{ marginRight: "20px", fontSize: 14 }} >
                   {link.name}
                 </Typography>
               ))}
-            </Box>
+            </Link>
           </Grid>
-          <Grid item lg={7}>
+          <Grid item lg={7} md={12} xs={12}>
             <Box display={"flex"} justifyContent={"flex-end"} >
               {socialIcons.map((social, index) => (
                 <Box key={index} width={social.width}>
