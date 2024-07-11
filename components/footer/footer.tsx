@@ -53,7 +53,7 @@ const Footer = () => {
                 </Typography>
                 <Cardtext pt={2.5}>
                   Lorem ipsum dolor sit amet, consectetur
-                  <br /> adipiscing elit, sed do eiusmod tempor.
+                   adipiscing elit, sed do eiusmod tempor.
                 </Cardtext>
               </Box>
               <Box pt={4}>

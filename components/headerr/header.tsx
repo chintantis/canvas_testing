@@ -5,8 +5,6 @@ import style from './header.module.css';
 import { Cardtext, Cardtext2, Medium_text, Medium_text2 } from "../typography";
 import PlayArrowIcon from '@mui/icons-material/PlayArrow';
 import AppleIcon from '@mui/icons-material/Apple';
-import '@fontsource/kumbh-sans';
-import '@fontsource/montserrat';
 import GooglePlayBadge from "../button";
 
 const Header = () => {
@@ -17,7 +15,7 @@ const Header = () => {
     </svg>
   )
   const icon = (
-    <svg fill="none" height="39" viewBox="0 0 15 15" width="47" xmlns="http://www.w3.org/2000/svg"><path d="M1.25097 0.0664289C1.40622 -0.0227402 1.59729 -0.0220988 1.75194 0.0681106L9.59402 4.64266L7.16668 6.82726L1 1.27725V0.5C1 0.320967 1.09572 0.155598 1.25097 0.0664289Z" fill="#1E231C" /><path d="M1 2.62262V12.3773L6.41925 7.49994L1 2.62262Z" fill="#1E231C" /><path d="M1 13.7226V14.5C1 14.679 1.09572 14.8444 1.25097 14.9336C1.40622 15.0227 1.59729 15.0221 1.75194 14.9319L9.59409 10.3573L7.16668 8.17262L1 13.7226Z" fill="#1E231C" /><path d="M10.5011 9.82822L13.7519 7.93189C13.9055 7.84228 14 7.67783 14 7.5C14 7.32217 13.9055 7.15772 13.7519 7.06811L10.501 5.17173L7.9141 7.49994L10.5011 9.82822Z" fill="#1E231C" />
+    <svg fill="none" height="33" viewBox="0 0 15 15" width="42" xmlns="http://www.w3.org/2000/svg"><path d="M1.25097 0.0664289C1.40622 -0.0227402 1.59729 -0.0220988 1.75194 0.0681106L9.59402 4.64266L7.16668 6.82726L1 1.27725V0.5C1 0.320967 1.09572 0.155598 1.25097 0.0664289Z" fill="#1E231C" /><path d="M1 2.62262V12.3773L6.41925 7.49994L1 2.62262Z" fill="#1E231C" /><path d="M1 13.7226V14.5C1 14.679 1.09572 14.8444 1.25097 14.9336C1.40622 15.0227 1.59729 15.0221 1.75194 14.9319L9.59409 10.3573L7.16668 8.17262L1 13.7226Z" fill="#1E231C" /><path d="M10.5011 9.82822L13.7519 7.93189C13.9055 7.84228 14 7.67783 14 7.5C14 7.32217 13.9055 7.15772 13.7519 7.06811L10.501 5.17173L7.9141 7.49994L10.5011 9.82822Z" fill="#1E231C" />
     </svg>
   );
   return (
@@ -29,41 +27,39 @@ const Header = () => {
               <Typography
                 fontSize={6}
                 sx={{ flexGrow: 1, color: '#000000', paddingLeft: 7 }}
-                fontFamily={'Poppins'}
+                fontFamily={"'Poppins', 'sans-serif'"}
               >
                 BRAND MARKETING TEAM
               </Typography>
               <Box>
                 {navItems.map((item) => (
-                  <Button key={item} sx={{ color: 'black', fontSize: 13, padding: '6px 13px', fontFamily: 'Poppins' }}>
+                  <Button key={item} sx={{ color: 'black', fontSize: 13, padding: '6px 13px', fontFamily: "'Poppins', 'sans-serif'" }}>
                     {item}
                   </Button>
                 ))}
                 <button
-                  style={{ marginLeft: 70, marginRight: 85, fontSize: 11, fontWeight: 400, fontFamily: 'Kumbh Sans' }}
+                  style={{ marginLeft: 70, marginRight: 70, fontSize: 11, fontWeight: 400, fontFamily: "'Kumbh Sans', 'sans-serif'" }}
                   className={style.button}> {headphone} CONTACT US</button>
               </Box>
             </Toolbar>
           </Box>
           <Grid container>
-            <Grid item lg={5}>
+            <Grid item lg={5} md={6} xs={6}>
               <Box>
-                <Typography fontSize={56} sx={{ WebkitTextStroke: '3px black' }} pt={12} fontFamily={'Kumbh Sans'}>
-                  BRIDGING <br />
+                <Typography fontSize={56} fontWeight={700} pt={12} fontFamily={"'Kumbh Sans', 'sans-serif'"} width={'60%'} lineHeight={1.2}>
+                  BRIDGING
                   THE GAP
                 </Typography>
-
-
               </Box>
-              <Typography fontSize={20} whiteSpace={'nowrap'} color={'#474747'} lineHeight={2} fontFamily={'Poppins'}>Empowering  connection between Clients and Vendors</Typography>
-              <Grid container mt={5}>
+              <Typography fontSize={20} whiteSpace={'nowrap'} color={'#474747'} lineHeight={2} fontFamily={"'Poppins', 'sans-serif'"} >Empowering  connection between Clients and Vendors</Typography>
+              <Grid container mt={5} width={'110%'}>
                 <GooglePlayBadge
                   icon={icon}
                   preText="Available on the"
                   mainText="Google Play"
                 />
                 <GooglePlayBadge
-                  icon={<AppleIcon style={{ fontSize: 45 ,paddingRight:'8px'}} />}
+                  icon={<AppleIcon style={{ fontSize: 45, paddingRight: '8px' }} />}
                   preText="Download on the"
                   mainText="App Store"
                 />
@@ -71,19 +67,19 @@ const Header = () => {
               <Box display="flex" gap={10.5} mt={6} pb={8}>
                 <Box>
                   <Medium_text2>16K+</Medium_text2>
-                  <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', WebkitTextStroke: '0.3px #474747' }} >Active users</Cardtext>
+                  <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }} >Active users</Cardtext>
                 </Box>
                 <Box>
                   <Medium_text2>08K+</Medium_text2>
-                  <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', WebkitTextStroke: '0.3px #474747' }}>Property sales</Cardtext>
+                  <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }}>Property sales</Cardtext>
                 </Box>
                 <Box>
                   <Medium_text2>12K+</Medium_text2>
-                  <Cardtext sx={{ fontSize: 18, paddingLeft: 2, WebkitTextStroke: '0.3px #474747' }}>Reviews</Cardtext>
+                  <Cardtext sx={{ fontSize: 18, paddingLeft: 2, fontWeight: 600 }}>Reviews</Cardtext>
                 </Box>
               </Box>
             </Grid>
-            <Grid item lg={6}></Grid>
+            <Grid item lg={6} md={6} xs={6}></Grid>
           </Grid>
         </Box>
       </Box >

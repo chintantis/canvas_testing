@@ -90,33 +90,33 @@ const ComThree = () => {
     return (
         <>
             <Box className="container">
-                <Grid container mt={6}>
-                    <Grid item lg={6}>
+                <Grid container mt={6} mb={9}>
+                    <Grid item lg={6} md={6} xs={6} >
                         <Box height={460} width={530} sx={{ background: '#f3f3ff', borderRadius: 4, mt: 25 }}></Box>
                     </Grid>
-                    <Grid item lg={6} textAlign={'left'} mb={13}>
+                    <Grid item lg={6} textAlign={'left'} md={6} xs={6}>
                         <Box>
-                            <Medium_text sx={{ textAlign: 'left', fontSize: 35 }}>What would you grade <br /> your social media page?</Medium_text>
-                            <Cardtext>Monotonectally implement integrated commerce & distributed is
-                                <br />conveniently unleash b2b customer service via long. </Cardtext>
+                            <Medium_text sx={{ textAlign: 'left', fontSize: 51, width: '110%', lineHeight: 1.2 }} >What would you grade  your social media page?</Medium_text>
+                            <Cardtext sx={{ width: '95%' }}>Monotonectally implement integrated commerce & distributed is
+                                conveniently unleash b2b customer service via long.</Cardtext>
                         </Box>
                         <Box display={'flex'} mt={3}>
                             <Box height={55} width={55} sx={{ background: '#f3f3ff', borderRadius: 3, m: 1.3 }}>
                                 {mobile}
                             </Box>
                             <Box>
-                                <Medium_text3>Mobile App</Medium_text3>
-                                <Cardtext>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Dignissimos
+                                <Medium_text3 lineHeight={1.7}>Mobile App</Medium_text3>
+                                <Cardtext>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
                                     odit aperiam illo adipisci cupiditate pariatur.</Cardtext>
                             </Box>
                         </Box>
                         <Box display={'flex'} mt={3}>
-                            <Box height={55} width={55} sx={{ background: '#f3f3ff', borderRadius: 3, m: 1.3 }}>
+                            <Box height={55} width={50} sx={{ background: '#f3f3ff', borderRadius: 3, m: 1.3 }}>
                                 {network}
                             </Box>
                             <Box>
-                                <Medium_text3>SEO</Medium_text3>
-                                <Cardtext>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Dignissimos
+                                <Medium_text3 lineHeight={1.7}>SEO</Medium_text3>
+                                <Cardtext>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
                                     odit aperiam illo adipisci cupiditate pariatur.</Cardtext>
                             </Box>
                         </Box>
@@ -125,8 +125,8 @@ const ComThree = () => {
                                 {people}
                             </Box>
                             <Box>
-                                <Medium_text3>Branding Consultation</Medium_text3>
-                                <Cardtext>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Dignissimos
+                                <Medium_text3 lineHeight={1.7}>Branding Consultation</Medium_text3>
+                                <Cardtext>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
                                     odit aperiam illo adipisci cupiditate pariatur.</Cardtext>
                             </Box>
                         </Box>
@@ -135,8 +135,8 @@ const ComThree = () => {
                                 {cloud}
                             </Box>
                             <Box>
-                                <Medium_text3>Cloud Storage</Medium_text3>
-                                <Cardtext>Lorem, ipsum dolor sit amet consectetur adipisicing elit.<br /> Dignissimos
+                                <Medium_text3 lineHeight={1.7}>Cloud Storage</Medium_text3>
+                                <Cardtext>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
                                     odit aperiam illo adipisci cupiditate pariatur.</Cardtext>
                             </Box>
                         </Box>
