@@ -2,6 +2,7 @@ import { Box, Grid } from '@mui/material';
 import React from 'react'
 import { Cardtext, Medium_text } from '../typography';
 import FeatureCard from '../iconbox';
+import style from './body.module.css'
 
 const ComThree = () => {
     const mobile = (
@@ -68,7 +69,7 @@ const ComThree = () => {
         </svg>
     );
     const cloud = (
-        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="27" style={{ padding:'14px 8px' }} viewBox="0 0 36 36" fill="none">
+        <svg xmlns="http://www.w3.org/2000/svg" width="36" height="27" style={{ padding: '14px 8px' }} viewBox="0 0 36 36" fill="none">
             <path d="M35.0976 13.6312C33.9006 11.1883 31.3175 9.76182 28.6278 9.90389L28.622 9.89875C28.5603 4.42159 24.1606 0 18.7361 0C13.3233 0 8.92611 4.28787 8.8464 9.74703C8.84576 9.8306 8.78469 9.89939 8.70176 9.90132L7.58254 9.92382C6.80918 9.93989 6.12453 10.0228 5.47396 10.2337C2.54509 11.1819 0.345229 13.5084 0.0385853 16.5935C-0.336202 20.3619 2.06102 23.6321 5.41353 24.5649C6.03389 24.7379 6.67996 24.7874 7.32347 24.7874L8.6754 24.788V21.1064H8.68504C8.78854 18.8036 13.529 17.5603 18.0001 17.5603C22.5207 17.5603 27.3247 18.8293 27.3247 21.1816V24.797H28.6651C29.2328 24.7977 29.8036 24.7597 30.3558 24.6254C34.6983 23.5691 37.5449 18.623 35.0976 13.6312ZM18.0001 28.8663C14.7151 28.8663 11.2893 28.1932 9.65705 26.9249V29.3099C9.65705 30.5493 13.2249 31.9353 18.0001 31.9353C22.7752 31.9353 26.3431 30.5493 26.3431 29.3105V26.9242C24.7109 28.1932 21.2851 28.8663 18.0001 28.8663Z" fill="url(#paint0_linear_6_4598)" />
             <path d="M18 32.9309C14.715 32.9309 11.2892 32.2578 9.65698 30.9888V33.3745C9.65698 34.6139 13.2249 35.9999 18 35.9999C22.7752 35.9999 26.343 34.6139 26.343 33.3745V30.9888C24.7108 32.2578 21.285 32.9303 18 32.9303V32.9309ZM26.343 22.8599C24.7108 24.1289 21.285 24.8026 18 24.8026C14.715 24.8026 11.2892 24.1289 9.65698 22.8599V25.2455C9.65698 26.4849 13.2249 27.8709 18 27.8709C22.7752 27.8709 26.343 26.4849 26.343 25.2455V22.8599Z" fill="url(#paint1_linear_6_4598)" />
             <path d="M18 18.5562C13.2249 18.5562 9.65698 19.9422 9.65698 21.1816C9.65698 22.421 13.2249 23.807 18 23.807C22.7752 23.807 26.343 22.421 26.343 21.1816C26.343 19.9422 22.7752 18.5562 18 18.5562Z" fill="url(#paint2_linear_6_4598)" />
@@ -113,14 +114,14 @@ const ComThree = () => {
     return (
         <>
             <Box className="container">
-                <Grid container mt={6} mb={9}>
-                    <Grid item lg={6} md={6} xs={6} >
+                <Grid container mt={6} mb={9} justifyContent={'center'}>
+                    <Grid item lg={6} md={0} xs={0} className={style.resBox}>
                         <Box height={460} width={530} sx={{ background: '#f3f3ff', borderRadius: 4, mt: 25 }}></Box>
                     </Grid>
-                    <Grid item lg={6} textAlign={'left'} md={6} xs={6}>
+                    <Grid item lg={6} md={12} xs={12} textAlign={'left'} className={style.responsiveThree}>
                         <Box>
                             <Medium_text sx={{ textAlign: 'left', fontSize: 51, width: '110%', lineHeight: 1.2 }} >What would you grade  your social media page?</Medium_text>
-                            <Cardtext sx={{ width: '95%' }}>Monotonectally implement integrated commerce & distributed is
+                            <Cardtext sx={{textAlign:'center'}}>Monotonectally implement integrated commerce & distributed is
                                 conveniently unleash b2b customer service via long.</Cardtext>
                         </Box>
                         {features.map((feature, index) => (

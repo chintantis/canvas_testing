@@ -13,7 +13,8 @@ export const Medium_text = styled(Typography)(({ }) => ({
   fontWeight: 600,
   fontFamily: "'Kumbh Sans', 'sans-serif'",
   "@media (max-width: 767px)": {
-    fontSize: "27px",
+    fontSize: "30px",
+    textAlign: 'center',
   },
 }));
 export const Medium_text2 = styled(Typography)(({ }) => ({
@@ -41,7 +42,7 @@ export const Cardtext = styled(Typography)(({ }) => ({
   fontWeight: 400,
   fontFamily: "'Poppins', 'sans-serif'",
   "@media (max-width: 767px)": {
-    fontSize: "10px",
+    fontSize: "13px",
   },
 }));
 export const Cardtext2 = styled(Typography)(({ }) => ({

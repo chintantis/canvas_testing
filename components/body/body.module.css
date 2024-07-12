@@ -2,8 +2,6 @@
   background-image: url("../../public/Logo.png");
   background-repeat: no-repeat;
   background-size: contain;
-  background-position: center;
-  
 }
 .gradient {
   background: linear-gradient(#8a5ef7, #492dac);
@@ -12,7 +10,6 @@
 }
 
 .hoverBorder:hover {
-  border: 2px solid transparent;
   background: linear-gradient(#8a5ef7, #492dac);
   border-radius: 16px;
 }
@@ -33,4 +30,13 @@
 
 .background {
   background: linear-gradient(#8a5ef7, #492dac);
+
+}
+
+
+@media only screen and (max-width: 1192px) {
+  .resBox {
+    display: none;
+  }
+
 }

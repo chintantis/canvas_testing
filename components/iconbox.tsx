@@ -10,7 +10,7 @@ interface FeatureCardProps {
 
 const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) => {
     return (
-        <Box display={'flex'} mt={3}>
+        <Box display={'flex'} mt={3} justifyContent={'center'}>
             <Box height={55} width={55} sx={{ background: '#f3f3ff', borderRadius: 3, m: 1.3 }}>
                 {icon}
             </Box>

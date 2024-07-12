@@ -73,7 +73,7 @@ const ComFour = () => {
         <>
             <Box className={style.bgimg} pb={9}>
                 <Box className='container'>
-                    <Box pt={9} >
+                    <Box pt={7}>
                         <Medium_text>
                             Plans for all sizes
                         </Medium_text>
@@ -87,7 +87,7 @@ const ComFour = () => {
                         </Box>
                     </Box>
                     <Grid mt={10} display={'flex'} justifyContent={'space-evenly'}>
-                        <Grid item lg={3} md={3} maxWidth={'37%'} className={style.hoverBorder}>
+                        <Grid item lg={6} md={12} maxWidth={'37%'} className={style.hoverBorder}>
                             <GoldPlanCard
                                 title="VENDORS"
                                 price="$0/Month"
@@ -96,7 +96,7 @@ const ComFour = () => {
                                 features={item}
                             />
                         </Grid>
-                        <Grid item lg={3} md={3} maxWidth={'37%'} className={style.hoverBorder}>
+                        <Grid item lg={6} md={0} maxWidth={'37%'} className={style.hoverBorder}>
                             <GoldPlanCard
                                 title="SHOPPERS"
                                 price="$70/Month"

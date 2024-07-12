@@ -8,11 +8,13 @@ import Comfive from "../../components/body/comfive";
 import Comsix from "../../components/body/comsix";
 import Comseven from "../../components/body/comseven";
 import Comeight from "../../components/body/comeight";
+import ResponsiveSidebar from "../../components/sidebar/sidebarMobile";
 
 export default function Layout({ children }: any) {
     return (
         <>
-            <Header />
+            <ResponsiveSidebar />
+            {/* <Header /> */}
             <ComTwo />
             <ComThree />
             <ComFour />
