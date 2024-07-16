@@ -80,82 +80,86 @@ const SideBar: React.FC<SideBarProps> = () => {
     );
     return (
         <>
+
             <Box className={style.bgimg}>
                 <Box className={style.container}>
-                    <Box sx={{ display: 'flex' }}>
-                        <Typography
-                            fontSize={6}
-                            sx={{ flexGrow: 1, color: '#000000', lineHeight: 10.5 }}
-                            fontFamily={"'Poppins', 'sans-serif'"}
-                        >
-                            BRAND MARKETING TEAM
-                        </Typography>
-                        <Toolbar style={{ paddingRight: 0 }} className={style.hidemenu}>
-                            <Box display={'flex'} gap={4}>
-                                {navItems.map((item) => (
-                                    <Button key={item} sx={{ color: 'black', fontSize: 13, fontFamily: "'Poppins', 'sans-serif'" }}>
-                                        {item}
-                                    </Button>
-                                ))}
-                                <button
-                                    style={{ fontSize: 11, fontWeight: 800, fontFamily: "'Kumbh Sans', 'sans-serif'" }}
-                                    className={style.button}> {headphone}CONTACT US</button>
-                            </Box>
-                        </Toolbar>
-                        <div>
-                            <Button onClick={toggleDrawer(true)} className={style.hide} sx={{ background: "none !important", color: "var(--green) !important" }}><MenuIcon /></Button>
-                            <Drawer open={open} onClose={toggleDrawer(false)}>
-                                {DrawerList}
-                            </Drawer>
-                        </div>
-                    </Box>
-                    <Grid container>
-                        <Grid item lg={5} md={6} xs={12}>
-                            <Box className={style.app}>
-                                <Medium_text className={style.gap} fontSize={56} fontWeight={700} lineHeight={1.2}>
-                                    BRIDGING
-                                    THE GAP
-                                </Medium_text>
-                            </Box>
-                            <Cardtext fontSize={20} className={style.para} color={'#474747'} lineHeight={2} fontFamily={"'Poppins', 'sans-serif'"} >Empowering  connection between Clients and Vendors</Cardtext>
-                            <Box display={'flex'} flexDirection={'column'} gap={5}>
-                                <Box></Box>
-                                <Grid container gap={3}>
-                                    <Grid item lg={5} md={6} xs={12} className={style.appbuttons}>
-                                        <GooglePlayBadge
-                                            icon={icon}
-                                            preText="Available on the"
-                                            mainText="Google Play"
-                                        />
+                    <Box display={'flex'} flexDirection={'column'} gap={3}>
+                        <Box></Box>
+                        <Box sx={{ display: 'flex' }}>
+                            <Typography
+                                fontSize={6}
+                                sx={{ flexGrow: 1, pl:7, color: '#000000', lineHeight: 9.5 }}
+                                fontFamily={"'Poppins', 'sans-serif'"}
+                            >
+                                BRAND MARKETING TEAM
+                            </Typography>
+                            <Toolbar style={{ paddingRight: 0 }} className={style.hidemenu}>
+                                <Box display={'flex'} gap={4}>
+                                    {navItems.map((item) => (
+                                        <Button key={item} sx={{ color: 'black', fontSize: 13, fontFamily: "'Poppins', 'sans-serif'" }}>
+                                            {item}
+                                        </Button>
+                                    ))}
+                                    <button
+                                        style={{ fontSize: 11, fontWeight: 800, fontFamily: "'Kumbh Sans', 'sans-serif'" }}
+                                        className={style.button}> {headphone}CONTACT US</button>
+                                </Box>
+                            </Toolbar>
+                            <div>
+                                <Button onClick={toggleDrawer(true)} className={style.hide} sx={{ background: "none !important", color: "var(--green) !important" }}><MenuIcon /></Button>
+                                <Drawer open={open} onClose={toggleDrawer(false)}>
+                                    {DrawerList}
+                                </Drawer>
+                            </div>
+                        </Box>
+                        <Grid container>
+                            <Grid item lg={5} md={6} xs={12}>
+                                <Box className={style.app}>
+                                    <Medium_text className={style.gap} fontSize={56} fontWeight={700} lineHeight={1.2}>
+                                        BRIDGING
+                                        THE GAP
+                                    </Medium_text>
+                                </Box>
+                                <Cardtext fontSize={20} className={style.para} color={'#474747'} lineHeight={2} fontFamily={"'Poppins', 'sans-serif'"} >Empowering  connection between Clients and Vendors</Cardtext>
+                                <Box display={'flex'} flexDirection={'column'} gap={5}>
+                                    <Box></Box>
+                                    <Grid container gap={3}>
+                                        <Grid item lg={5} md={6} xs={12} className={style.appbuttons}>
+                                            <GooglePlayBadge
+                                                icon={icon}
+                                                preText="Available on the"
+                                                mainText="Google Play"
+                                            />
+                                        </Grid>
+                                        <Grid item lg={5} md={6} xs={12} className={style.appbuttons}>
+                                            <GooglePlayBadge
+                                                icon={<AppleIcon style={{ fontSize: 35, paddingRight: '8px' }} />}
+                                                preText="Download on the"
+                                                mainText="App Storee"
+                                            />
+                                        </Grid>
                                     </Grid>
-                                    <Grid item lg={5} md={6} xs={12} className={style.appbuttons}>
-                                        <GooglePlayBadge
-                                            icon={<AppleIcon style={{ fontSize: 35, paddingRight: '8px' }} />}
-                                            preText="Download on the"
-                                            mainText="App Storee"
-                                        />
+                                    <Grid container gap={6} className={style.Three}>
+                                        <Grid item lg={3} md={4} xs={12}>
+                                            <Medium_text2>16K+</Medium_text2>
+                                            <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }} >Active users</Cardtext>
+                                        </Grid>
+                                        <Grid item lg={3} md={4} xs={12}>
+                                            <Medium_text2>08K+</Medium_text2>
+                                            <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }}>Property sales</Cardtext>
+                                        </Grid>
+                                        <Grid item lg={2} md={4} xs={12}>
+                                            <Medium_text2>12K+</Medium_text2>
+                                            <Cardtext sx={{ fontSize: 18, fontWeight: 600 }}>Reviews</Cardtext>
+                                        </Grid>
                                     </Grid>
-                                </Grid>
-                                <Grid container gap={6} className={style.Three}>
-                                    <Grid item lg={3} md={4} xs={12}>
-                                        <Medium_text2>16K+</Medium_text2>
-                                        <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }} >Active users</Cardtext>
-                                    </Grid>
-                                    <Grid item lg={3} md={4} xs={12}>
-                                        <Medium_text2>08K+</Medium_text2>
-                                        <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }}>Property sales</Cardtext>
-                                    </Grid>
-                                    <Grid item lg={2} md={4} xs={12}>
-                                        <Medium_text2>12K+</Medium_text2>
-                                        <Cardtext sx={{ fontSize: 18, fontWeight: 600 }}>Reviews</Cardtext>
-                                    </Grid>
-                                </Grid>
-                            </Box>
+                                </Box>
+                            </Grid>
+                            <Grid item lg={6} md={6} xs={6}></Grid>
                         </Grid>
-                        <Grid item lg={6} md={6} xs={6}></Grid>
-                    </Grid>
-                </Box>
-            </Box >
+                    </Box>
+                </Box >
+            </Box>
         </>
     );
 };
