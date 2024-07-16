@@ -93,45 +93,50 @@ const ComThree = () => {
         {
             icon: mobile,
             title: 'Mobile App',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit aperiam illo adipisci cupiditate pariatur.',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. odit aperiam illo adipisci cupiditate pariatur.',
         },
         {
             icon: network,
             title: 'SEO',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit aperiam illo adipisci cupiditate pariatur.',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. odit aperiam illo adipisci cupiditate pariatur.',
         },
         {
             icon: people,
             title: 'Branding Consultation',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit aperiam illo adipisci cupiditate pariatur.',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. odit aperiam illo adipisci cupiditate pariatur.',
         },
         {
             icon: cloud,
             title: 'Cloud Storage',
-            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dignissimos odit aperiam illo adipisci cupiditate pariatur.',
+            description: 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. odit aperiam illo adipisci cupiditate pariatur.',
         },
     ];
     return (
         <>
-            <Box className="container">
-                <Grid container mt={6} mb={9} justifyContent={'center'}>
-                    <Grid item lg={6} md={0} xs={0} className={style.resBox}>
-                        <Box height={460} width={530} sx={{ background: '#f3f3ff', borderRadius: 4, mt: 25 }}></Box>
+            <Box className={style.container}>
+                <Grid container gap={8} >
+                    <Box></Box>
+                    <Grid item lg={5} md={12} xs={12} className={style.Box}>
+                        <Box className={style.colorBox} sx={{ height: '65%', width: '100%', background: '#f3f3ff', borderRadius: 4 }}></Box>
                     </Grid>
-                    <Grid item lg={6} md={12} xs={12} textAlign={'left'} className={style.responsiveThree}>
-                        <Box>
-                            <Medium_text sx={{ textAlign: 'left', fontSize: 51, width: '110%', lineHeight: 1.2 }} >What would you grade  your social media page?</Medium_text>
-                            <Cardtext sx={{textAlign:'center'}}>Monotonectally implement integrated commerce & distributed is
-                                conveniently unleash b2b customer service via long.</Cardtext>
+                    <Grid item lg={5} md={12} xs={12} textAlign={'left'} className={style.responsiveThree}>
+                        <Box display={'flex'} flexDirection={'column'} gap={3}>
+                            <Medium_text className={style.text} sx={{ textAlign: 'left', fontSize: 51, width: '112%', lineHeight: 1.2 }} >What would you grade  your social media page?</Medium_text>
+                            <Cardtext sx={{ textAlign: 'left'}} width={'100%'}>Monotonectally implement integrated commerce & distributed is
+                                conveniently unleash b2b customer via long.</Cardtext>
                         </Box>
-                        {features.map((feature, index) => (
-                            <FeatureCard
-                                key={index}
-                                icon={feature.icon}
-                                title={feature.title}
-                                description={feature.description}
-                            />
-                        ))}
+                        <Box display={'flex'} flexDirection={'column'} gap={4}>
+                            <Box></Box>
+                            {features.map((feature, index) => (
+                                <FeatureCard
+                                    key={index}
+                                    icon={feature.icon}
+                                    title={feature.title}
+                                    description={feature.description}
+                                />
+                            ))}
+                             <Box></Box>
+                        </Box>
                     </Grid>
                 </Grid>
             </Box>

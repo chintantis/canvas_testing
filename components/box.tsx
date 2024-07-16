@@ -23,37 +23,39 @@ const GoldPlanCard: React.FC<GoldPlanCardProps> = ({ title, price, planType, des
         </svg>
     );
     return (
-        <Grid item lg={12}>
-            <Box height={620} pb={7} width={440} sx={{ background: 'white', boxShadow: '0px 0px 3px -1px #e4e1e1', borderRadius: 4  }}>
-                <Typography textAlign={'center'} className={style.gradient} fontSize={20} fontWeight={600} pt={4} fontFamily={"'Kumbh Sans','sans-serif'"}>{title}</Typography>
-                <Medium_text>{price}</Medium_text>
-                <Typography textAlign={'center'} color={'#474747'} fontWeight={600} fontSize={22} fontFamily={"'Kumbh Sans','sans-serif'"}>
-                    {planType}
-                </Typography>
-                <Cardtext textAlign={'center'} pt={2} style={{ fontWeight: 400 }}>{description}</Cardtext>
+        <Grid item lg={12}  >
+            <Box display={'flex'} gap={2} flexDirection={'column'}  sx={{ background: 'white', boxShadow: '0px 0px 50px -1px #e4e1e1', borderRadius: 4, padding: 2 }}>
+                <Box></Box>
                 <Box>
-                    <Box sx={{ marginLeft: 5, marginTop: 3, display: 'flex' }}>
-                        <Box>
-                            {item.map((item) => (
-                                Array.from({ length: 5 }).map((_, index) => (
-                                    <Cardtext key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left', padding: '9px 0' }}>
-                                        {right}
-                                    </Cardtext>
-                                ))
-                            ))}
-                        </Box>
-                        <Box>
-                            {item.map((item) => (
-                                Array.from({ length: 5 }).map((_, index) => (
-                                    <Cardtext key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left', padding: '12px 0' }}>
-                                        {item}
-                                    </Cardtext>
-                                ))
-                            ))}
-                        </Box>
-                    </Box>
-                    <Box pt={2}>
-                        <button className='button' style={{ margin: '31px 34px', padding: '13px 138px', whiteSpace: 'nowrap', fontWeight: 800, fontFamily: "'Kumbh Sans','sans-serif'", fontSize: 14 }}>GET STARTED</button>
+                    <Typography textAlign={'center'} className={style.gradient} fontSize={20} fontWeight={600} fontFamily={"'Kumbh Sans','sans-serif'"}>{title}</Typography>
+                </Box>
+                <Box>
+                    <Medium_text>{price}</Medium_text>
+                </Box>
+                <Box>
+                    <Typography textAlign={'center'} color={'#474747'} fontWeight={600} fontSize={22} fontFamily={"'Kumbh Sans','sans-serif'"}>
+                        {planType}
+                    </Typography>
+                </Box>
+                <Box>
+                    <Cardtext textAlign={'center'} style={{ fontWeight: 400 }}>{description}</Cardtext>
+                </Box>
+                <Box></Box>
+                <Box display={'flex'} flexDirection={'column'} gap={3}>
+                    {item.map((item) => (
+                        Array.from({ length: 5 }).map((_, index) => (
+                            <Box display={'flex'}>
+                                <Box key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left' }}>
+                                    {right}
+                                </Box>
+                                <Cardtext key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left' }}>
+                                    {item}
+                                </Cardtext>
+                            </Box>
+                        ))
+                    ))}
+                    <Box display={'flex'} justifyContent={'center'}>
+                        <button className='button' style={{width:'90%',fontWeight: 800, fontFamily: "'Kumbh Sans','sans-serif'", fontSize: 14 }}>GET STARTED</button>
                     </Box>
                 </Box>
             </Box>

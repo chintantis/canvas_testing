@@ -7,16 +7,40 @@
   background: linear-gradient(#8a5ef7, #492dac);
   background-clip: text;
   color: transparent;
+  font-weight: 700;
 }
-
+.hoverBorder {
+  padding: 1px;
+}
 .hoverBorder:hover {
+  padding: 1px;
   background: linear-gradient(#8a5ef7, #492dac);
   border-radius: 16px;
 }
+.container {
+  width: 100%;
+  max-width: 93%;
+  margin: auto;
+}
+.containerEight {
+  width: 100%;
+  max-width: 83%;
+  margin: auto;
+}
+.bgContent {
+  background-image: url("../../public/Content.jpg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 500px;
+}
+
 .bgimg2 {
   background-image: url("../../public/bg3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .bgimgg {
@@ -27,16 +51,119 @@
 .bgcolor {
   background: #4ca1ff;
 }
-
+.sixtext {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-around;
+}
 .background {
   background: linear-gradient(#8a5ef7, #492dac);
-
 }
-
-
+.Box {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.gapcard {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
 @media only screen and (max-width: 1192px) {
   .resBox {
     display: none;
   }
+  .title {
+    width: 80%;
+  }
+  .para {
+    width: 100%;
+    text-align: center;
+  }
+  .bgContent {
+    height: 175px;
+  }
+  .container {
+    width: 100%;
+    max-width: 85%;
+    margin: auto;
+  }
+  .text {
+    width: 100%;
+    text-align: center;
+  }
+}
 
+@media only screen and (max-width: 1190px) {
+  .bgContent {
+    height: 400px;
+  }
+  .container {
+    width: 100%;
+    max-width: 85%;
+    margin: auto;
+  }
+  .colorBox {
+    height: 400px;
+  }
+}
+@media only screen and (max-width: 720px) {
+  .bgimg {
+    min-height: 100vh;
+    height: 100%;
+  }
+  .bgContent {
+    height: 175px;
+  }
+  .container {
+    width: 100%;
+    max-width: 90%;
+    margin: auto;
+  }
+  .width {
+    width: 100%;
+  }
+  .colorBox {
+    height: 300px;
+  }
+  .plancard {
+    display: block;
+  }
+  .gapcard {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+  }
+  .sixtext {
+    align-content: center;
+  }
+  .alignsix {
+    text-align: center;
+  }
+  .sixbutton {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .lastSix {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+  .bgimg2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .Eighttext {
+    text-align: center;
+    width: 100%;
+  }
+  .eightbuttons{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
 }

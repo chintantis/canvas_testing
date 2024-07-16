@@ -7,14 +7,16 @@ a {
 }
 ul {
   list-style: none;
+  padding: 0;
 }
 ol {
   list-style: none;
+  padding: 0;
 }
 .container {
-  width: 1200px;
+  width: 100%;
+  max-width: 93%;
   margin: auto;
-  padding: 40px;
 }
 .button {
   background: linear-gradient(#8a5ef7, #492dac);
@@ -24,6 +26,7 @@ ol {
   border-radius: 6px;
   color: white;
   font-family: "Kumbh San", sans-serif;
+  font-weight: 800;
   cursor: pointer;
 }
 .Cardtext {

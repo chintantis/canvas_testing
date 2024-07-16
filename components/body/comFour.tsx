@@ -71,42 +71,54 @@ const ComFour = () => {
     }));
     return (
         <>
-            <Box className={style.bgimg} pb={9}>
-                <Box className='container'>
-                    <Box pt={7}>
-                        <Medium_text>
-                            Plans for all sizes
-                        </Medium_text>
-                        <Cardtext textAlign={'center'}>Simple, transparent pricing that grows with you. Try any plan free for 30 days.</Cardtext>
-                        <Box display={'flex'} justifyContent={'center'} mt={1.5}>
-                            <FormControlLabel style={{ marginTop: 6 }}
-                                control={<IOSSwitch defaultChecked />}
-                                label=""
-                            />
-                            <Typography paddingTop={1} className={style.gradient} fontSize={19} fontWeight={600} fontFamily={'Kumbh Sans'}>Annual pricing (save 20%)</Typography>
+            <Box display={'flex'} flexDirection={'column'} gap={8}>
+                <Box></Box>
+                <Box className={style.bgimg}>
+                    <Box className='container' display={'flex'} flexDirection={'column'} gap={4}>
+                        <Box>
+                            <Medium_text>
+                                Plans for all sizes
+                            </Medium_text>
+                            <Box display={'flex'} gap={4} justifyContent={'center'} flexDirection={'column'}>
+                                <Cardtext textAlign={'center'}>Simple, transparent pricing that grows with you. Try any plan free for 30 days.</Cardtext>
+                                <Box display={'flex'} justifyContent={'center'}>
+                                    <FormControlLabel style={{ marginTop: 6 }}
+                                        control={<IOSSwitch defaultChecked />}
+                                        label=""
+                                    />
+                                    <Typography paddingTop={1} className={style.gradient} fontSize={19} fontWeight={600} fontFamily={'Kumbh Sans'}>Annual pricing (save 20%)</Typography>
+                                </Box>
+                            </Box>
                         </Box>
+                        <Grid display={'flex'} justifyContent={'space-evenly'} className={style.plancard}>
+                            <Box className={style.gapcard}>
+                                <Box>
+                                    <Grid item lg={5} md={8} xs={12} className={style.hoverBorder}>
+                                        <GoldPlanCard
+                                            title="VENDORS"
+                                            price="$0/Month"
+                                            planType="Free plan"
+                                            description="All the basics you need to start Listing your business"
+                                            features={item}
+                                        />
+                                    </Grid>
+                                </Box>
+                                <Box>
+                                    <Grid item lg={6} md={8} xs={12} className={style.hoverBorder}>
+                                        <GoldPlanCard
+                                            title="SHOPPERS"
+                                            price="$70/Month"
+                                            planType="Gold plan"
+                                            description="All Exclusive perks and extra benefits for Gold vendors"
+                                            features={item}
+                                        />
+                                    </Grid>
+                                </Box>
+                            </Box>
+                        </Grid>
                     </Box>
-                    <Grid mt={10} display={'flex'} justifyContent={'space-evenly'}>
-                        <Grid item lg={6} md={12} maxWidth={'37%'} className={style.hoverBorder}>
-                            <GoldPlanCard
-                                title="VENDORS"
-                                price="$0/Month"
-                                planType="Free plan"
-                                description="All the basics you need to start Listing your business"
-                                features={item}
-                            />
-                        </Grid>
-                        <Grid item lg={6} md={0} maxWidth={'37%'} className={style.hoverBorder}>
-                            <GoldPlanCard
-                                title="SHOPPERS"
-                                price="$70/Month"
-                                planType="Gold plan"
-                                description="All Exclusive perks and extra benefits for Gold vendors"
-                                features={item}
-                            />
-                        </Grid>
-                    </Grid>
                 </Box>
+                <Box></Box>
             </Box>
         </>
     )

@@ -8,43 +8,52 @@ const Comsix = () => {
     return (
         <>
             <Box className="container">
-                <Box>
-                    <Medium_text width={'67%'} paddingLeft={28}>
+                <Box className={style.sixtext} display={'flex'} flexDirection={'column'} gap={3}>
+                    <Box></Box>
+                    <Medium_text width={'67%'}>
                         Join the largest Community of
                         Vendors and Shoppers
                     </Medium_text>
-                    <Cardtext width={'60%'} textAlign={'center'} paddingLeft={33}>
+                    <Cardtext width={'60%'} textAlign={'center'} >
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
                         ut labore et dolore magna aliqua.
                     </Cardtext>
-                </Box>
+                </Box >
                 <Grid container>
-                    <Grid item lg={6} md={6} xs={6}>
-                        <Box pt={17}>
-                            <Medium_text style={{ textAlign: 'left' }}>Shopper benefits</Medium_text>
-                            <Cardtext>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </Cardtext>
-                        </Box>
-                        <Box pt={3}>
-                            <Cardtext padding={'8px 30px'}>Convenient shopping</Cardtext>
-                            <Cardtext padding={'8px 30px'}>Cometitive pricing for youing</Cardtext>
-                            <Cardtext padding={'8px 30px'}>Access to local Products + Servicing</Cardtext>
-                            <Cardtext padding={'8px 30px'}>Unique offers + Deals</Cardtext>
-                            <Cardtext padding={'8px 30px'}>Up to Date Vendor Info</Cardtext>
-                        </Box>
-                        <Box pt={5}>
-                            <button className='button' style={{ fontWeight: 800 }}> READ MORE</button>
+                    <Grid item lg={6} md={6} xs={12}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, }}>
+                            <Box display={'flex'} flexDirection={'column'} gap={3} className={style.alignsix}>
+                                <Box></Box>
+                                <Medium_text sx={{ textAlign: 'left' }}>Shopper benefits</Medium_text>
+                                <Cardtext>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                </Cardtext>
+                            </Box>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, paddingLeft: 5 }}>
+                                <Cardtext>Convenient shopping</Cardtext>
+                                <Cardtext>Cometitive pricing for youing</Cardtext>
+                                <Cardtext>Access to local Products + Servicing</Cardtext>
+                                <Cardtext>Unique offers + Deals</Cardtext>
+                                <Cardtext>Up to Date Vendor Info</Cardtext>
+                            </Box>
+                            <Box className={style.sixbutton}>
+                                <button className='button'> READ MORE</button>
+                            </Box>
                         </Box>
                     </Grid>
-                    <Grid className={style.bgimg2} item lg={6} md={6} xs={6}>
-                        <Box sx={{ background: 'white', width: '75%', boxShadow: '1px 1px 3px 0px gainsboro', marginTop: '95%', borderRadius: 3 }}>
-                            <Cardtext padding={3}>
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            </Cardtext>
+                    <Grid className={style.bgimg2} item lg={6} md={6} xs={12} >
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 ,justifyContent:'flex-end'}}>
+                            <Box></Box>
+                            <Box sx={{ background: 'white', width: '70%', boxShadow: '1px 1px 3px 0px gainsboro', borderRadius: 3 }} >
+                                <Cardtext>
+                                    Lorem ipsum  sit amet, adipiscing elit, sed do tempor incididunt ut labore et dolore magna aliqua.
+                                </Cardtext>
+                            </Box>
                         </Box>
+
                     </Grid>
                 </Grid>
+
             </Box>
         </>
     )
