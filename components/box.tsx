@@ -24,7 +24,7 @@ const GoldPlanCard: React.FC<GoldPlanCardProps> = ({ title, price, planType, des
     );
     return (
         <Grid item lg={12}  >
-            <Box display={'flex'} gap={2} flexDirection={'column'} sx={{ background: 'white', boxShadow: '0px 0px 50px -1px #e4e1e1', borderRadius: 4, padding: 2 }}>
+            <Box display={'flex'} gap={1} flexDirection={'column'} sx={{ background: 'white', boxShadow: '0px 0px 50px -1px #e4e1e1', borderRadius: 4, padding: 3 }}>
                 <Box></Box>
                 <Box>
                     <Typography textAlign={'center'} className={style.gradient} fontSize={20} fontWeight={600} fontFamily={"'Kumbh Sans','sans-serif'"}>{title}</Typography>
@@ -37,28 +37,29 @@ const GoldPlanCard: React.FC<GoldPlanCardProps> = ({ title, price, planType, des
                         {planType}
                     </Typography>
                 </Box>
-                <Box>
-                    <Cardtext textAlign={'center'} style={{ fontWeight: 400 }}>{description}</Cardtext>
-                </Box>
-                <Box></Box>
-                <Box display={'flex'} flexDirection={'column'} gap={3}>
-                    {item.map((item) => (
-                        Array.from({ length: 5 }).map((_, index) => (
-                            <Box display={'flex'}>
-                                <Box key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left' }}>
-                                    {right}
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap:5}}>
+                    <Box sx={{ display: 'flex', flexDirection: 'column', alignContent: 'space-around', flexWrap: 'wrap' }}>
+                        <Cardtext textAlign={'center'} style={{ fontWeight: 400, width: '80%' }}>{description}</Cardtext>
+                    </Box>
+                    <Box display={'flex'} flexDirection={'column'} gap={3}>
+                        {item.map((item) => (
+                            Array.from({ length: 5 }).map((_, index) => (
+                                <Box display={'flex'}>
+                                    <Box key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left' }}>
+                                        {right}
+                                    </Box>
+                                    <Cardtext key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left' }}>
+                                        {item}
+                                    </Cardtext>
                                 </Box>
-                                <Cardtext key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left' }}>
-                                    {item}
-                                </Cardtext>
-                            </Box>
-                        ))
-                    ))}
+                            ))
+                        ))}
+                    </Box>
                 </Box>
                 <Box display={'flex'} flexDirection={'column'} gap={6}>
                     <Box></Box>
                     <Box display={'flex'} justifyContent={'center'}>
-                        <button className='button' style={{ width: '90%', fontWeight: 800, fontFamily: "'Kumbh Sans','sans-serif'", fontSize: 14 }}>GET STARTED</button>
+                        <button className='button' style={{ width: '100%', fontWeight: 800, fontFamily: "'Kumbh Sans','sans-serif'", fontSize: 14 }}>GET STARTED</button>
                     </Box>
                     <Box></Box>
                 </Box>
