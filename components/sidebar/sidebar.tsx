@@ -88,7 +88,7 @@ const SideBar: React.FC<SideBarProps> = () => {
                         <Box sx={{ display: 'flex' }}>
                             <Typography
                                 fontSize={6}
-                                sx={{ flexGrow: 1, pl:7, color: '#000000', lineHeight: 9.5 }}
+                                sx={{ flexGrow: 1, pl: 7, color: '#000000', lineHeight: 9.5 }}
                                 fontFamily={"'Poppins', 'sans-serif'"}
                             >
                                 BRAND MARKETING TEAM
@@ -124,14 +124,14 @@ const SideBar: React.FC<SideBarProps> = () => {
                                 <Box display={'flex'} flexDirection={'column'} gap={5}>
                                     <Box></Box>
                                     <Grid container gap={3}>
-                                        <Grid item lg={5} md={6} xs={12} className={style.appbuttons}>
+                                        <Grid item lg={4.4} md={5} xs={12} className={style.appbuttons}>
                                             <GooglePlayBadge
                                                 icon={icon}
                                                 preText="Available on the"
                                                 mainText="Google Play"
                                             />
                                         </Grid>
-                                        <Grid item lg={5} md={6} xs={12} className={style.appbuttons}>
+                                        <Grid item lg={4.4} md={5} xs={12} className={style.appbuttons}>
                                             <GooglePlayBadge
                                                 icon={<AppleIcon style={{ fontSize: 35, paddingRight: '8px' }} />}
                                                 preText="Download on the"
@@ -139,20 +139,23 @@ const SideBar: React.FC<SideBarProps> = () => {
                                             />
                                         </Grid>
                                     </Grid>
-                                    <Grid container gap={6} className={style.Three}>
-                                        <Grid item lg={3} md={4} xs={12}>
-                                            <Medium_text2>16K+</Medium_text2>
-                                            <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }} >Active users</Cardtext>
+                                    <Box display={'flex'} flexDirection={'column'} gap={16}>
+                                        <Grid container gap={6} className={style.Three}>
+                                            <Grid item lg={3} md={4} xs={12}>
+                                                <Medium_text2>16K+</Medium_text2>
+                                                <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }} >Active users</Cardtext>
+                                            </Grid>
+                                            <Grid item lg={3} md={4} xs={12}>
+                                                <Medium_text2>08K+</Medium_text2>
+                                                <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }}>Property sales</Cardtext>
+                                            </Grid>
+                                            <Grid item lg={2} md={4} xs={12}>
+                                                <Medium_text2>12K+</Medium_text2>
+                                                <Cardtext sx={{ fontSize: 18, fontWeight: 600 }}>Reviews</Cardtext>
+                                            </Grid>
                                         </Grid>
-                                        <Grid item lg={3} md={4} xs={12}>
-                                            <Medium_text2>08K+</Medium_text2>
-                                            <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }}>Property sales</Cardtext>
-                                        </Grid>
-                                        <Grid item lg={2} md={4} xs={12}>
-                                            <Medium_text2>12K+</Medium_text2>
-                                            <Cardtext sx={{ fontSize: 18, fontWeight: 600 }}>Reviews</Cardtext>
-                                        </Grid>
-                                    </Grid>
+                                        <Box></Box>
+                                    </Box>
                                 </Box>
                             </Grid>
                             <Grid item lg={6} md={6} xs={6}></Grid>

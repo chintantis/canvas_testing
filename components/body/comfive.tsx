@@ -43,22 +43,30 @@ const Comfive = () => {
                         ut labore et dolore magna aliqua.
                     </Cardtext>
                 </Box>
-                <Box display={'flex'} gap={12} flexWrap={'wrap'} justifyContent={'center'}>
+                <Box display={'flex'} gap={18.8} flexWrap={'wrap'}>
                     {data.map((entry, index) => (
                         <Box key={index} width={boxDimensions.width} height={boxDimensions.height}>
-                            <Box height={'75%'} border={'8px solid #4CA1FF1F'} boxShadow={'1px 0px 25px 1px gainsboro'} borderRadius={10}>
+                            <Box height={'75%'} border={'8px solid #4CA1FF1F'} boxShadow={'0px 0px 8px -1px gainsboro'} borderRadius={10}>
+                                <Box height={'100%'} boxShadow={'1px 0px 15px -1px gainsboro inset'} borderRadius={8}>
+                                </Box>
                             </Box>
-                            <Box>
-                                <Medium_text style={{ fontSize: 30, textAlign: 'center' }}>
-                                    {entry.title}
-                                </Medium_text>
-                                <Cardtext style={{ textAlign: 'center', fontSize: 14, fontWeight: 400 }}>
-                                    {entry.item}
-                                </Cardtext>
+                            <Box gap={1.5} display={'flex'} flexDirection={'column'}>
+                                <Box></Box>
+                                <Box>
+                                    <Medium_text style={{ fontSize: 30, textAlign: 'center' }}>
+                                        {entry.title}
+                                    </Medium_text>
+                                    <Cardtext style={{ textAlign: 'center', fontSize: 18, fontWeight: 400 }}>
+                                        {entry.item}
+                                    </Cardtext>
+                                </Box>
                             </Box>
                         </Box>
                     ))}
-                    <Box textAlign={'center'}>
+                </Box>
+                <Box>
+                    <Box gap={7} display={'flex'} flexDirection={'column'} alignContent={'space-around'} flexWrap={'wrap'}>
+                        <Box></Box>
                         <button className='button'>VIEW MORE</button>
                     </Box>
                 </Box>

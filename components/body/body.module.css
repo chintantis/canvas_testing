@@ -24,7 +24,7 @@
 }
 .containerEight {
   width: 100%;
-  max-width: 83%;
+  max-width: 91%;
   margin: auto;
 }
 .bgContent {
@@ -69,6 +69,17 @@
   flex-direction: row;
   gap: 50px;
 }
+
+.sixRelative{
+  position: relative;
+}
+
+.sixBox{
+  position: absolute;
+  bottom: 0;
+  right:47%;
+}
+
 @media only screen and (max-width: 1192px) {
   .resBox {
     display: none;
@@ -85,7 +96,7 @@
   }
   .container {
     width: 100%;
-    max-width: 85%;
+    max-width: 93%;
     margin: auto;
   }
   .text {
@@ -117,7 +128,7 @@
   }
   .container {
     width: 100%;
-    max-width: 90%;
+    max-width: 93%;
     margin: auto;
   }
   .width {
@@ -165,5 +176,14 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
+  }
+  .column{
+    flex-direction: column;
+  }
+  .sixBox{
+    width: 100%;
+  }
+  .sixRelative{
+    display: none;
   }
 }

@@ -24,7 +24,7 @@ const GoldPlanCard: React.FC<GoldPlanCardProps> = ({ title, price, planType, des
     );
     return (
         <Grid item lg={12}  >
-            <Box display={'flex'} gap={2} flexDirection={'column'}  sx={{ background: 'white', boxShadow: '0px 0px 50px -1px #e4e1e1', borderRadius: 4, padding: 2 }}>
+            <Box display={'flex'} gap={2} flexDirection={'column'} sx={{ background: 'white', boxShadow: '0px 0px 50px -1px #e4e1e1', borderRadius: 4, padding: 2 }}>
                 <Box></Box>
                 <Box>
                     <Typography textAlign={'center'} className={style.gradient} fontSize={20} fontWeight={600} fontFamily={"'Kumbh Sans','sans-serif'"}>{title}</Typography>
@@ -54,9 +54,13 @@ const GoldPlanCard: React.FC<GoldPlanCardProps> = ({ title, price, planType, des
                             </Box>
                         ))
                     ))}
+                </Box>
+                <Box display={'flex'} flexDirection={'column'} gap={6}>
+                    <Box></Box>
                     <Box display={'flex'} justifyContent={'center'}>
-                        <button className='button' style={{width:'90%',fontWeight: 800, fontFamily: "'Kumbh Sans','sans-serif'", fontSize: 14 }}>GET STARTED</button>
+                        <button className='button' style={{ width: '90%', fontWeight: 800, fontFamily: "'Kumbh Sans','sans-serif'", fontSize: 14 }}>GET STARTED</button>
                     </Box>
+                    <Box></Box>
                 </Box>
             </Box>
         </Grid>

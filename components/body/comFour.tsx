@@ -74,7 +74,8 @@ const ComFour = () => {
             <Box display={'flex'} flexDirection={'column'} gap={8}>
                 <Box></Box>
                 <Box className={style.bgimg}>
-                    <Box className='container' display={'flex'} flexDirection={'column'} gap={4}>
+                    <Box className='container' display={'flex'} flexDirection={'column'} gap={5}>
+                        <Box></Box>
                         <Box>
                             <Medium_text>
                                 Plans for all sizes
@@ -116,6 +117,7 @@ const ComFour = () => {
                                 </Box>
                             </Box>
                         </Grid>
+                        <Box></Box>
                     </Box>
                 </Box>
                 <Box></Box>

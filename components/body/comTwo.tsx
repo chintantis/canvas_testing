@@ -8,7 +8,7 @@ const ComTwo = () => {
 
     return (
         <>
-            <Box className="container" display={'flex'} flexDirection={'column'} gap={9}>
+            <Box className="container" display={'flex'} flexDirection={'column'} gap={2}>
                 <Box display={'flex'} flexDirection={'column'} gap={10}>
                     <Box></Box>
                     <Box display={'flex'} alignItems={'center'} flexDirection={'column'} gap={3}>
@@ -20,15 +20,11 @@ const ComTwo = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box className={style.bgContent} display={'flex'} justifyContent={'center'}>
-                    {/* <Image
-                    src={'/Content.jpg'}
-                    width={1200}
-                    height={500}
-                    alt='img'
-                /> */}
+                <Box display={'flex'} flexDirection={'column'} gap={10}>
+                    <Box className={style.bgContent} display={'flex'} justifyContent={'center'}>
+                    </Box>
+                    <Box></Box>
                 </Box>
-
             </Box >
         </>
     )

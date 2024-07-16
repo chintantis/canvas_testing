@@ -17,24 +17,24 @@ const Comeight = () => {
                 <Grid container>
                     <Grid item lg={9} md={9} xs={12} sx={{ backgroundColor: '#4ca1ff' }}>
                         <Box className={style.bgimgg}>
-                            <Box className={style.containerEight} display={'flex'} flexDirection={'column'} gap={3}>
+                            <Box className={style.containerEight} display={'flex'} flexDirection={'column'} gap={8}>
                                 <Box></Box>
                                 <Box className={style.Eighttext}>
-                                    <Medium_text sx={{ fontSize: 35, width: '34%', textAlign: 'left', color: 'white' }}>Download the Avendy
+                                    <Medium_text sx={{ fontSize: 35, width: '35%', textAlign: 'left', color: 'white' }}>Download the Avendy
                                         app Today!</Medium_text>
                                     <Cardtext width={'44%'} style={{ fontSize: 15, color: 'white' }}>You can download the Avendy app on the Google play store on
                                         Apple store.</Cardtext>
                                 </Box>
                                 <Box>
                                     <Grid container gap={3}>
-                                        <Grid item lg={3} md={12} xs={12} className={style.eightbuttons}>
+                                        <Grid item lg={2.5} md={12} xs={12} className={style.eightbuttons}>
                                             <GooglePlayBadge
                                                 icon={icon}
                                                 preText="Available on the"
                                                 mainText="Google Play"
                                             />
                                         </Grid>
-                                        <Grid item lg={3} md={12} xs={12} className={style.eightbuttons}>
+                                        <Grid item lg={2.5} md={12} xs={12} className={style.eightbuttons}>
                                             <GooglePlayBadge
                                                 icon={<AppleIcon style={{ fontSize: 35, paddingRight: '8px' }} />}
                                                 preText="Download on the"

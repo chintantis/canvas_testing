@@ -11,15 +11,17 @@ const Comseven = () => {
             <Box className="container">
                 <Grid container mt={6} mb={9}>
                     <Grid item lg={6} md={6} xs={6} >
-
                     </Grid>
                     <Grid item lg={6} textAlign={'left'} md={6} xs={12}>
-                        <Box>
-                            <Medium_text sx={{ textAlign: 'left', fontSize: 51, width: '100%', lineHeight: 1.2 }} >Vendor Benefits</Medium_text>
-                            <Cardtext sx={{ width: '95%' }} className={style.alignsix}>Monotonectally implement integrated commerce & distributed is conveniently unleash b2b
-                                customer service via long. </Cardtext>
+                        <Box display={'flex'} flexDirection={'column'} gap={9}>
+                            <Box></Box>
+                            <Box>
+                                <Medium_text sx={{ textAlign: 'left', fontSize: 51, width: '100%', lineHeight: 1.2 }} >Vendor Benefits</Medium_text>
+                                <Cardtext sx={{ width: '95%' }} className={style.alignsix}>Monotonectally implement integrated commerce & distributed is conveniently unleash b2b
+                                    customer service via long. </Cardtext>
+                            </Box>
                         </Box>
-                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3}}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                             <Box pt={3} sx={{ display: 'flex', flexDirection: 'column', gap: 3, paddingLeft: 5 }}>
                                 <Cardtext>Increased Visibility</Cardtext>
                                 <Cardtext>Expanded Customer Base</Cardtext>
@@ -27,10 +29,13 @@ const Comseven = () => {
                                 <Cardtext>Vendor reward and Incentives</Cardtext>
                                 <Cardtext>Bid on Gigs</Cardtext>
                             </Box>
-                            <Box className={style.sixbutton}>
-                                <button className='button' style={{ textAlign: 'center' }}>
-                                    READ MORE
-                                </button>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 13 }}>
+                                <Box className={style.sixbutton}>
+                                    <button className='button' style={{ textAlign: 'center' }}>
+                                        READ MORE
+                                    </button>
+                                </Box>
+                                <Box></Box>
                             </Box>
                         </Box>
 
