@@ -51,14 +51,14 @@ const Footer = () => {
 
   return (
     <>
-      <Box display="flex" flexDirection="column" gap={10}>
+      <Box display="flex" flexDirection="column" gap={10} className={style.footerGap}>
         <Box></Box>
         <Box className='container'>
           <Grid container>
             <Grid item lg={5} md={4} xs={12} display={"flex"} flexDirection={"column"} justifyContent={"space-around"}>
-              <Box display="flex" flexDirection="column" gap={7}>
+              <Box display="flex" flexDirection="column" gap={7} className={style.footerGap}>
                 <Box></Box>
-                <Box display="flex" flexDirection="column" gap={3}>
+                <Box display="flex" flexDirection="column" gap={3} >
                   <Box></Box>
                   <Box>
                     <Typography fontSize={8} sx={{ fontFamily: 'Poppins', paddingLeft: 14 }}>
@@ -81,7 +81,7 @@ const Footer = () => {
               </Box>
             </Grid>
             <Grid item lg={7} md={8} xs={12} className={style.loop}>
-              <Box display="flex" flexWrap="wrap" gap={9}>
+              <Box display="flex" flexWrap="wrap" gap={9} className={style.footerGap2}>
                 {sections.map((section, index) => (
                   <Box key={index} className={style.sectionBox}>
                     <Cardtext2 className={style.sectionTitle}>
@@ -97,7 +97,7 @@ const Footer = () => {
               </Box>
             </Grid>
           </Grid>
-          <Box display={"flex"} flexDirection={"column"} gap={5}>
+          <Box display={"flex"} flexDirection={"column"} gap={5} className={style.footerGap2}>
             <Box sx={{ border: '0.75px solid #ebebeb' }}></Box>
             <Grid container>
               <Grid item lg={5} md={5} xs={12} sx={{ display: 'flex', gap: '21px' }} className={style.footerend}>
@@ -110,7 +110,7 @@ const Footer = () => {
               <Grid item lg={7} md={12} xs={12}>
                 <Box display="flex" justifyContent="flex-end" gap={2}>
                   {socialIcons.map((social, index) => (
-                    <Box key={index} padding={1.2} sx={{ lineHeight:0.7, boxShadow: '1px 1px 4px -1px #403c3c', background: 'white', border: '1px solid transparent', borderRadius: '50%', textAlign: 'center' }}>
+                    <Box key={index} padding={1.2} sx={{ lineHeight:0.7, boxShadow: '0px 1px 9px -1px #403c3c', background: 'white', border: '1px solid transparent', borderRadius: '50%', textAlign: 'center' }}>
                       {social.icon}
                     </Box>
                   ))}

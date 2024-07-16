@@ -71,7 +71,7 @@ const ComFour = () => {
     }));
     return (
         <>
-            <Box display={'flex'} flexDirection={'column'} gap={8}>
+            <Box display={'flex'} flexDirection={'column'} gap={8} className={style.fourGap}>
                 <Box></Box>
                 <Box className={style.bgimg}>
                     <Box className='container' display={'flex'} flexDirection={'column'} gap={5}>

@@ -1,6 +1,7 @@
 import { Box, useMediaQuery, useTheme } from '@mui/material';
 import React from 'react';
 import { Cardtext, Medium_text } from '../typography';
+import style from './body.module.css'
 
 const Comfive = () => {
     const data = [
@@ -43,10 +44,10 @@ const Comfive = () => {
                         ut labore et dolore magna aliqua.
                     </Cardtext>
                 </Box>
-                <Box display={'flex'} gap={18.8} flexWrap={'wrap'}>
+                <Box display={'flex'} gap={18.8} flexWrap={'wrap'} className={style.gapFive}>
                     {data.map((entry, index) => (
                         <Box key={index} width={boxDimensions.width} height={boxDimensions.height}>
-                            <Box height={'75%'} border={'8px solid #4CA1FF1F'} boxShadow={'0px 0px 8px -1px gainsboro'} borderRadius={10}>
+                            <Box height={'75%'} className={style.heightFive} border={'8px solid #4CA1FF1F'} boxShadow={'0px 0px 8px -1px gainsboro'} borderRadius={10}>
                                 <Box height={'100%'} boxShadow={'1px 0px 15px -1px gainsboro inset'} borderRadius={8}>
                                 </Box>
                             </Box>
@@ -65,7 +66,7 @@ const Comfive = () => {
                     ))}
                 </Box>
                 <Box>
-                    <Box gap={7} display={'flex'} flexDirection={'column'} alignContent={'space-around'} flexWrap={'wrap'}>
+                    <Box gap={7} className={style.fiveGapB} display={'flex'} flexDirection={'column'} alignContent={'space-around'} flexWrap={'wrap'}>
                         <Box></Box>
                         <button className='button'>VIEW MORE</button>
                     </Box>

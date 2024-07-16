@@ -5,4 +5,10 @@
   .footerend{
     display: block;
   }
+  .footerGap{
+    gap: 15px;
+  }
+  .footerGap2{
+    gap: 25px;
+  }
 }

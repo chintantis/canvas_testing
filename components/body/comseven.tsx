@@ -13,7 +13,7 @@ const Comseven = () => {
                     <Grid item lg={6} md={6} xs={6} >
                     </Grid>
                     <Grid item lg={6} textAlign={'left'} md={6} xs={12}>
-                        <Box display={'flex'} flexDirection={'column'} gap={9}>
+                        <Box display={'flex'} flexDirection={'column'} gap={7} className={style.SevenGap2}>
                             <Box></Box>
                             <Box>
                                 <Medium_text sx={{ textAlign: 'left', fontSize: 51, width: '100%', lineHeight: 1.2 }} >Vendor Benefits</Medium_text>
@@ -21,7 +21,7 @@ const Comseven = () => {
                                     customer service via long. </Cardtext>
                             </Box>
                         </Box>
-                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
+                        <Box sx={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                             <Box pt={3} sx={{ display: 'flex', flexDirection: 'column', gap: 3, paddingLeft: 5 }}>
                                 <Cardtext>Increased Visibility</Cardtext>
                                 <Cardtext>Expanded Customer Base</Cardtext>
@@ -29,7 +29,7 @@ const Comseven = () => {
                                 <Cardtext>Vendor reward and Incentives</Cardtext>
                                 <Cardtext>Bid on Gigs</Cardtext>
                             </Box>
-                            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 13 }}>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 9 }} className={style.sevenGap}>
                                 <Box className={style.sixbutton}>
                                     <button className='button' style={{ textAlign: 'center' }}>
                                         READ MORE
@@ -38,7 +38,6 @@ const Comseven = () => {
                                 <Box></Box>
                             </Box>
                         </Box>
-
                     </Grid>
                 </Grid>
             </Box>

@@ -9,7 +9,7 @@ const ComTwo = () => {
     return (
         <>
             <Box className="container" display={'flex'} flexDirection={'column'} gap={2}>
-                <Box display={'flex'} flexDirection={'column'} gap={10}>
+                <Box display={'flex'} flexDirection={'column'} gap={10}  className={style.twoGap}>
                     <Box></Box>
                     <Box display={'flex'} alignItems={'center'} flexDirection={'column'} gap={3}>
                         <Medium_text lineHeight={'1.1'} width={'58%'} className={style.title}>Join the biggest community
@@ -20,7 +20,7 @@ const ComTwo = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box display={'flex'} flexDirection={'column'} gap={10}>
+                <Box display={'flex'} flexDirection={'column'} gap={10} className={style.twoGap}>
                     <Box className={style.bgContent} display={'flex'} justifyContent={'center'}>
                     </Box>
                     <Box></Box>

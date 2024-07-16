@@ -125,7 +125,7 @@ const ComThree = () => {
                                 <Cardtext sx={{ textAlign: 'left' }} width={'100%'}>Monotonectally implement integrated commerce & distributed is
                                     conveniently unleash b2b customer via long.</Cardtext>
                             </Box>
-                            <Box display={'flex'} flexDirection={'column'} gap={4}>
+                            <Box display={'flex'} flexDirection={'column'} gap={4} >
                                 <Box></Box>
                                 {features.map((feature, index) => (
                                     <FeatureCard

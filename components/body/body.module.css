@@ -70,14 +70,14 @@
   gap: 50px;
 }
 
-.sixRelative{
+.sixRelative {
   position: relative;
 }
 
-.sixBox{
+.sixBox {
   position: absolute;
   bottom: 0;
-  right:47%;
+  right: 30%;
 }
 
 @media only screen and (max-width: 1192px) {
@@ -162,28 +162,57 @@
     flex-wrap: wrap;
   }
   .bgimg2 {
+    background-image: url("../../public/bg3.jpg");
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
-    align-content: space-around;
+    align-content: center;
+    height: 230px;
   }
   .Eighttext {
     text-align: center;
     width: 100%;
   }
-  .eightbuttons{
+  .eightbuttons {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
   }
-  .column{
+  .column {
     flex-direction: column;
   }
-  .sixBox{
-    width: 100%;
+  .sixBox {
+    width: 85%;
+    position: static;
   }
-  .sixRelative{
-    display: none;
+  .sixRelative {
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+  .heightFive {
+    height: 160%;
+  }
+  .gapFive {
+    gap: 250px;
+  }
+  .fiveGapB {
+    gap: 186px;
+  }
+  .sevenGap{
+    gap: 0px;
+  }
+  .SevenGap2{
+    gap: 5px;
+  }
+  .sixGap{
+    gap: 30px;
+  }
+  .fourGap{
+    gap: 24px;
+  }
+  .twoGap{
+    gap: 25px;
   }
 }

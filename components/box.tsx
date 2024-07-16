@@ -24,16 +24,16 @@ const GoldPlanCard: React.FC<GoldPlanCardProps> = ({ title, price, planType, des
     );
     return (
         <Grid item lg={12}  >
-            <Box display={'flex'} gap={1} flexDirection={'column'} sx={{ background: 'white', boxShadow: '0px 0px 50px -1px #e4e1e1', borderRadius: 4, padding: 3 }}>
+            <Box display={'flex'} gap={2} flexDirection={'column'} sx={{ background: 'white', boxShadow: '0px 0px 50px -1px #e4e1e1', borderRadius: 4, padding: 3 }}>
                 <Box></Box>
                 <Box>
-                    <Typography textAlign={'center'} className={style.gradient} fontSize={20} fontWeight={600} fontFamily={"'Kumbh Sans','sans-serif'"}>{title}</Typography>
+                    <Typography textAlign={'center'}  className={style.gradient} fontSize={20} fontWeight={600} fontFamily={"'Kumbh Sans','sans-serif'"}>{title}</Typography>
                 </Box>
                 <Box>
-                    <Medium_text>{price}</Medium_text>
+                    <Medium_text lineHeight={1}>{price}</Medium_text>
                 </Box>
                 <Box>
-                    <Typography textAlign={'center'} color={'#474747'} fontWeight={600} fontSize={22} fontFamily={"'Kumbh Sans','sans-serif'"}>
+                    <Typography lineHeight={1} textAlign={'center'} color={'#474747'} fontWeight={600} fontSize={22} fontFamily={"'Kumbh Sans','sans-serif'"}>
                         {planType}
                     </Typography>
                 </Box>

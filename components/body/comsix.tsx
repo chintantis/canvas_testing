@@ -7,7 +7,7 @@ const Comsix = () => {
     return (
         <>
             <Box className="container">
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 9 }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 9 }} className={style.sixGap}>
                     <Box></Box>
                     <Box className={style.sixtext} sx={{ display: 'flex', flexDirection: 'column', gap: 3 }}>
                         <Medium_text width={'67%'}>
@@ -22,10 +22,10 @@ const Comsix = () => {
                     <Box></Box>
                 </Box>
                 <Grid container>
-                    <Grid item lg={6} md={6} xs={12}>
+                    <Grid item lg={8} md={6} xs={12}>
                         <Medium_text sx={{ textAlign: 'left' }}>Shopper benefits</Medium_text>
                         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
-                            <Cardtext className={style.alignsix}>
+                            <Cardtext className={style.alignsix} width={'71%'}>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                             </Cardtext>
                             <Box sx={{ display: 'flex', flexDirection: 'column', gap: 3, paddingLeft: 5 }}>
@@ -35,14 +35,18 @@ const Comsix = () => {
                                 <Cardtext>Unique offers + Deals</Cardtext>
                                 <Cardtext>Up to Date Vendor Info</Cardtext>
                             </Box>
-                            <Box className={style.sixbutton}>
-                                <button className='button'> READ MORE</button>
+                            <Box sx={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
+                                <Box className={style.sixbutton}>
+                                    <button className='button'> READ MORE</button>
+                                </Box>
+                                <Box></Box>
                             </Box>
+
                         </Box>
                     </Grid>
-                    <Grid className={style.bgimg2} item lg={6} md={6} xs={8}>
+                    <Grid className={style.bgimg2} item lg={4} md={6} xs={12}>
                         <Box className={style.sixRelative}>
-                            <Box className={style.sixBox} sx={{ background: 'white', width: '70%', padding: 3, boxShadow: '1px 1px 75px 0px gainsboro', borderRadius: 3 }} >
+                            <Box className={style.sixBox} sx={{ background: 'white', width: '93%', padding: 3, boxShadow: '1px 1px 75px 0px gainsboro', borderRadius: 3 }} >
                                 <Cardtext sx={{ color: 'black', fontWeight: 500 }}>
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 </Cardtext>
