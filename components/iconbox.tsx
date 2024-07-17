@@ -16,7 +16,7 @@ const FeatureCard: React.FC<FeatureCardProps> = ({ icon, title, description }) =
             </Box>
             <Box>
                 <Medium_text3 lineHeight={1.7}>{title}</Medium_text3>
-                <Cardtext width={'111%'} className={style.width}>{description}</Cardtext>
+                <Cardtext width={'101%'} className={style.width}>{description}</Cardtext>
             </Box>
         </Box>
     );

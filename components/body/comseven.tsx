@@ -12,15 +12,12 @@ const Comseven = () => {
                 <Grid container mt={6} mb={9}>
                     <Grid item lg={6} md={6} xs={6} >
                     </Grid>
-                    <Grid item lg={6} textAlign={'left'} md={6} xs={12}>
-                        <Box display={'flex'} flexDirection={'column'} gap={7} className={style.SevenGap2}>
-                            <Box></Box>
+                    <Grid item lg={6} textAlign={'left'} md={6} sm={12} xs={12} mt={13}>
                             <Box>
                                 <Medium_text sx={{ textAlign: 'left', fontSize: 51, width: '100%', lineHeight: 1.2 }} >Vendor Benefits</Medium_text>
                                 <Cardtext sx={{ width: '95%' }} className={style.alignsix}>Monotonectally implement integrated commerce & distributed is conveniently unleash b2b
                                     customer service via long. </Cardtext>
                             </Box>
-                        </Box>
                         <Box sx={{ display: 'flex', flexDirection: 'column', gap: 6 }}>
                             <Box pt={3} sx={{ display: 'flex', flexDirection: 'column', gap: 3, paddingLeft: 5 }}>
                                 <Cardtext>Increased Visibility</Cardtext>

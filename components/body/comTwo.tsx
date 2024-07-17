@@ -20,10 +20,9 @@ const ComTwo = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box display={'flex'} flexDirection={'column'} gap={10} className={style.twoGap}>
+                <Box display={'flex'} flexDirection={'column'} gap={10} className={style.twoGap} sx={{mb:9}}>
                     <Box className={style.bgContent} display={'flex'} justifyContent={'center'}>
                     </Box>
-                    <Box></Box>
                 </Box>
             </Box >
         </>

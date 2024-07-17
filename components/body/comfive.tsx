@@ -24,7 +24,7 @@ const Comfive = () => {
         if (isSmallScreen) {
             return { width: '100%', height: '150px' };
         } else if (isMediumScreen) {
-            return { width: 'calc(50% - 0px)', height: '200px' };
+            return { width: 'calc(33% - 0px)', height: '200px' };
         } else if (isLargeScreen) {
             return { width: 'calc(16% - 0px)', height: '250px' };
         } else {
@@ -36,7 +36,7 @@ const Comfive = () => {
 
     return (
         <Box>
-            <Box className="container" display={'flex'} flexDirection={'column'} gap={10}>
+            <Box className="container" display={'flex'} flexDirection={'column'} gap={7}>
                 <Box>
                     <Medium_text>Who can benefit from using Avendy?</Medium_text>
                     <Cardtext width={'100%'} sx={{ fontSize: 20 }} textAlign={'center'} display={'flex'} justifyContent={'space-around'}>
@@ -46,28 +46,24 @@ const Comfive = () => {
                 </Box>
                 <Box display={'flex'} gap={18.8} flexWrap={'wrap'} className={style.gapFive}>
                     {data.map((entry, index) => (
-                        <Box key={index} width={boxDimensions.width} height={boxDimensions.height}>
+                        <Box key={index} width={boxDimensions.width} height={boxDimensions.height} className={style.widthFive}>
                             <Box height={'75%'} className={style.heightFive} border={'8px solid #4CA1FF1F'} boxShadow={'0px 0px 8px -1px gainsboro'} borderRadius={10}>
                                 <Box height={'100%'} boxShadow={'1px 0px 15px -1px gainsboro inset'} borderRadius={8}>
                                 </Box>
                             </Box>
-                            <Box gap={1.5} display={'flex'} flexDirection={'column'}>
-                                <Box></Box>
-                                <Box>
-                                    <Medium_text style={{ fontSize: 30, textAlign: 'center' }}>
-                                        {entry.title}
-                                    </Medium_text>
-                                    <Cardtext style={{ textAlign: 'center', fontSize: 18, fontWeight: 400 }}>
-                                        {entry.item}
-                                    </Cardtext>
-                                </Box>
+                            <Box>
+                                <Medium_text style={{ fontSize: 30, textAlign: 'center', padding: '6px 0' }}>
+                                    {entry.title}
+                                </Medium_text>
+                                <Cardtext style={{ textAlign: 'center', fontSize: 18, fontWeight: 400 }}>
+                                    {entry.item}
+                                </Cardtext>
                             </Box>
                         </Box>
                     ))}
                 </Box>
                 <Box>
-                    <Box gap={7} className={style.fiveGapB} display={'flex'} flexDirection={'column'} alignContent={'space-around'} flexWrap={'wrap'}>
-                        <Box></Box>
+                    <Box sx={{ pt: 10 }} className={style.fiveGapB} display={'flex'} flexDirection={'column'} alignContent={'space-around'} flexWrap={'wrap'}>
                         <button className='button'>VIEW MORE</button>
                     </Box>
                 </Box>

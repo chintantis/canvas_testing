@@ -114,29 +114,25 @@ const ComThree = () => {
     return (
         <>
             <Box className={style.container}>
-                <Grid container >
-                    <Box display={'flex'} gap={10} className={style.column}>
-                        <Grid item lg={5} md={12} xs={12} className={style.Box}>
+                <Grid container>
+                    <Box display={'flex'} gap={14} className={style.column}>
+                        <Grid item lg={5} md={12} sm={12} xs={12} className={style.Box}>
                             <Box className={style.colorBox} sx={{ height: '65%', width: '100%', background: '#f3f3ff', borderRadius: 4 }}></Box>
                         </Grid>
-                        <Grid item lg={5} md={12} xs={12} textAlign={'left'} className={style.responsiveThree}>
-                            <Box display={'flex'} flexDirection={'column'} gap={3}>
-                                <Medium_text className={style.text} sx={{ textAlign: 'left', fontSize: 51, width: '112%', lineHeight: 1.2 }} >What would you grade  your social media page?</Medium_text>
+                        <Grid item lg={5} md={12} sm={12} xs={12} textAlign={'left'} className={style.responsiveThree}>
+                            <Box display={'flex'} flexDirection={'column'} gap={3} sx={{pb:4}}>
+                                <Medium_text className={style.text} sx={{ textAlign: 'left', fontSize: 51, width: '100%', lineHeight: 1.2 }} >What would you grade  your social media page?</Medium_text>
                                 <Cardtext sx={{ textAlign: 'left' }} width={'100%'}>Monotonectally implement integrated commerce & distributed is
                                     conveniently unleash b2b customer via long.</Cardtext>
                             </Box>
-                            <Box display={'flex'} flexDirection={'column'} gap={4} >
-                                <Box></Box>
-                                {features.map((feature, index) => (
-                                    <FeatureCard
-                                        key={index}
-                                        icon={feature.icon}
-                                        title={feature.title}
-                                        description={feature.description}
-                                    />
-                                ))}
-                                <Box></Box>
-                            </Box>
+                            {features.map((feature, index) => (
+                                <FeatureCard
+                                    key={index}
+                                    icon={feature.icon}
+                                    title={feature.title}
+                                    description={feature.description}
+                                />
+                            ))}
                         </Grid>
                     </Box>
                 </Grid>

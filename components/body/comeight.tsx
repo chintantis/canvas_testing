@@ -26,15 +26,15 @@ const Comeight = () => {
                                         Apple store.</Cardtext>
                                 </Box>
                                 <Box>
-                                    <Grid container gap={3}>
-                                        <Grid item lg={2.5} md={12} xs={12} className={style.eightbuttons}>
+                                    <Grid container gap={3} className={style.mdside}>
+                                        <Grid item lg={2.5} md={3.6} sm={3.3} xs={6.3} className={style.appbuttons}>
                                             <GooglePlayBadge
                                                 icon={icon}
                                                 preText="Available on the"
                                                 mainText="Google Play"
                                             />
                                         </Grid>
-                                        <Grid item lg={2.5} md={12} xs={12} className={style.eightbuttons}>
+                                        <Grid item lg={2.5} md={3.6} sm={3.3} xs={6.3} className={style.appbuttons}>
                                             <GooglePlayBadge
                                                 icon={<AppleIcon style={{ fontSize: 35, paddingRight: '8px' }} />}
                                                 preText="Download on the"

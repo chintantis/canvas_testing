@@ -80,10 +80,10 @@ const Footer = () => {
                 <Box></Box>
               </Box>
             </Grid>
-            <Grid item lg={7} md={8} xs={12} className={style.loop}>
-              <Box display="flex" flexWrap="wrap" gap={9} className={style.footerGap2}>
+            <Grid item lg={7} md={8} xs={12} className={style.loop} >
+              <Box display="flex" flexWrap="wrap" gap={9} className={style.footerGap2} >
                 {sections.map((section, index) => (
-                  <Box key={index} className={style.sectionBox}>
+                  <Box key={index} className={style.sectionBox} sx={{pb:5}}>
                     <Cardtext2 className={style.sectionTitle}>
                       {section.title}
                     </Cardtext2>

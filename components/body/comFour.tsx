@@ -71,11 +71,9 @@ const ComFour = () => {
     }));
     return (
         <>
-            <Box display={'flex'} flexDirection={'column'} gap={8} className={style.fourGap}>
-                <Box></Box>
-                <Box className={style.bgimg}>
-                    <Box className='container' display={'flex'} flexDirection={'column'} gap={5}>
-                        <Box></Box>
+            <Box display={'flex'} flexDirection={'column'} gap={8} className={style.fourGap} sx={{pt:10}}>
+                <Box className={style.bgimg} sx={{pb:8}}>
+                    <Box className='container' display={'flex'} flexDirection={'column'} gap={5} sx={{pt:5}}>
                         <Box>
                             <Medium_text>
                                 Plans for all sizes
@@ -91,7 +89,7 @@ const ComFour = () => {
                                 </Box>
                             </Box>
                         </Box>
-                        <Grid display={'flex'} justifyContent={'space-evenly'} className={style.plancard}>
+                        <Grid display={'flex'} justifyContent={'space-evenly'} className={style.plancard} sx={{pb:2}}>
                             <Box className={style.gapcard}>
                                 <Box>
                                     <Grid item lg={5} md={8} xs={12} className={style.hoverBorder}>
@@ -117,10 +115,8 @@ const ComFour = () => {
                                 </Box>
                             </Box>
                         </Grid>
-                        <Box></Box>
                     </Box>
                 </Box>
-                <Box></Box>
             </Box>
         </>
     )
