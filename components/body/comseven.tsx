@@ -7,7 +7,6 @@ const Comseven = () => {
 
     return (
         <>
-
             <Box className="container">
                 <Grid container mt={6} mb={9}>
                     <Grid item lg={6} md={6} xs={6} >

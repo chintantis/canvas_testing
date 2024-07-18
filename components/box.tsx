@@ -25,19 +25,12 @@ const GoldPlanCard: React.FC<GoldPlanCardProps> = ({ title, price, planType, des
     return (
         <Grid item lg={12}  >
             <Box display={'flex'} gap={2} flexDirection={'column'} sx={{ background: 'white', boxShadow: '0px 0px 50px -1px #e4e1e1', borderRadius: 4, padding: 3 }}>
-                <Box></Box>
-                <Box>
-                    <Typography textAlign={'center'}  className={style.gradient} fontSize={20} fontWeight={600} fontFamily={"'Kumbh Sans','sans-serif'"}>{title}</Typography>
-                </Box>
-                <Box>
-                    <Medium_text lineHeight={1}>{price}</Medium_text>
-                </Box>
-                <Box>
-                    <Typography lineHeight={1} textAlign={'center'} color={'#474747'} fontWeight={600} fontSize={22} fontFamily={"'Kumbh Sans','sans-serif'"}>
-                        {planType}
-                    </Typography>
-                </Box>
-                <Box sx={{ display: 'flex', flexDirection: 'column', gap:5}}>
+                <Typography textAlign={'center'} className={style.gradient} fontSize={20} fontWeight={600} fontFamily={"'Kumbh Sans','sans-serif'"}>{title}</Typography>
+                <Medium_text lineHeight={1}>{price}</Medium_text>
+                <Typography lineHeight={1} textAlign={'center'} color={'#474747'} fontWeight={600} fontSize={22} fontFamily={"'Kumbh Sans','sans-serif'"}>
+                    {planType}
+                </Typography>
+                <Box sx={{ display: 'flex', flexDirection: 'column', gap: 5 }}>
                     <Box sx={{ display: 'flex', flexDirection: 'column', alignContent: 'space-around', flexWrap: 'wrap' }}>
                         <Cardtext textAlign={'center'} style={{ fontWeight: 400, width: '80%' }}>{description}</Cardtext>
                     </Box>
@@ -48,7 +41,7 @@ const GoldPlanCard: React.FC<GoldPlanCardProps> = ({ title, price, planType, des
                                     <Box key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left' }}>
                                         {right}
                                     </Box>
-                                    <Cardtext key={`${item}-${index}`} sx={{ color: '#474747', fontWeight: 400, textAlign: 'left' }}>
+                                    <Cardtext key={`${item}-${index}`} sx={{ whiteSpace: 'nowrap', color: '#474747', fontWeight: 400, textAlign: 'left' }}>
                                         {item}
                                     </Cardtext>
                                 </Box>

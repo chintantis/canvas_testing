@@ -112,7 +112,7 @@ const SideBar: React.FC<SideBarProps> = () => {
                             </div>
                         </Box>
                         <Grid container>
-                            <Grid item lg={5} md={6} sm={12} xs={12}>
+                            <Grid item lg={12} md={8} sm={12} xs={12}>
                                 <Box className={style.app}>
                                     <Medium_text className={style.gap} fontSize={56} fontWeight={700} lineHeight={1.2}>
                                         BRIDGING
@@ -134,22 +134,22 @@ const SideBar: React.FC<SideBarProps> = () => {
                                         />
                                     </Box>
                                     <Grid container gap={6} className={style.Three} sx={{ pb: 9 }}>
-                                        <Grid item lg={3} md={4} xs={12}>
+                                        <Grid item lg={2} md={4} xs={12}>
                                             <Medium_text2>16K+</Medium_text2>
                                             <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }} >Active users</Cardtext>
                                         </Grid>
-                                        <Grid item lg={3} md={4} xs={12}>
+                                        <Grid item lg={2} md={4} xs={12}>
                                             <Medium_text2>08K+</Medium_text2>
                                             <Cardtext sx={{ fontSize: 18, whiteSpace: 'nowrap', fontWeight: 600 }}>Property sales</Cardtext>
                                         </Grid>
-                                        <Grid item lg={2} md={4} xs={12}>
+                                        <Grid item lg={2} md={3} xs={12}>
                                             <Medium_text2>12K+</Medium_text2>
                                             <Cardtext sx={{ fontSize: 18, fontWeight: 600 }}>Reviews</Cardtext>
                                         </Grid>
                                     </Grid>
                                 </Box>
                             </Grid>
-                            <Grid item lg={6} md={6} xs={6}></Grid>
+                            <Grid item lg={6} md={4} xs={6}></Grid>
                         </Grid>
                     </Box>
                 </Box >
