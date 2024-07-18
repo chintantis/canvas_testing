@@ -36,7 +36,7 @@ const Comfive = () => {
 
     return (
         <Box>
-            <Box className="container" display={'flex'} flexDirection={'column'} gap={7}>
+            <Box className="container" display={'flex'} flexDirection={'column'} gap={7} pt={9}>
                 <Box>
                     <Medium_text>Who can benefit from using Avendy?</Medium_text>
                     <Cardtext width={'100%'} sx={{ fontSize: 20 }} textAlign={'center'} display={'flex'} justifyContent={'space-around'}>

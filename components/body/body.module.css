@@ -17,15 +17,12 @@
   background: linear-gradient(#8a5ef7, #492dac);
   border-radius: 16px;
 }
-.container {
-  width: 100%;
-  max-width: 93%;
-  margin: auto;
-}
+
 .containerEight {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  padding-left: 75px;
 }
 .bgContent {
   background-image: url("../../public/Content.jpg");
@@ -82,16 +79,7 @@
   bottom: 0;
   right: 30%;
 }
-.twoContainer {
-  width: 100%;
-  max-width: 1200px;
-  margin: auto;
-}
-.ThreeContainer {
-  width: 100%;
-  max-width: 1255px;
-  margin: auto;
-}
+
 @media only screen and (max-width: 1192px) {
   .resBox {
     display: none;
@@ -103,14 +91,7 @@
     width: 100%;
     text-align: center;
   }
-  .container {
-    width: 100%;
-    max-width: 93%;
-    margin: auto;
-  }
-  .ThreeContainer {
-    max-width: 93%;
-  }
+
   .text {
     width: 100%;
     text-align: center;
@@ -125,16 +106,8 @@
     background-size: contain;
     min-height: 422px;
   }
-  .twoContainer {
-    max-width: 93%;
-  }
 }
 @media only screen and (max-width: 1190px) {
-  .container {
-    width: 100%;
-    max-width: 93%;
-    margin: auto;
-  }
   .colorBox {
     height: 400px;
   }
@@ -145,8 +118,9 @@
   .widthFive {
     width: 35%;
   }
-  .ThreeContainer {
+  .containerEight {
     max-width: 93%;
+    padding-left: 0;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -159,17 +133,16 @@
     min-height: 100vh;
     height: 100%;
   }
+  .containerEight {
+    max-width: 93%;
+    padding-left: 0;
+  }
   .bgContent {
     background-size: contain;
     min-height: 257px;
   }
   .twoContainer {
     max-width: 93%;
-  }
-  .container {
-    width: 100%;
-    max-width: 93%;
-    margin: auto;
   }
 
   .width {
@@ -184,7 +157,7 @@
   .gapcard {
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    gap: 37px;
   }
   .sixtext {
     align-content: center;
@@ -270,10 +243,5 @@
     flex-direction: column;
     flex-wrap: wrap;
     align-content: space-around;
-  }
-  .ThreeContainer {
-    width: 100%;
-    max-width: 93%;
-    margin: auto;
   }
 }

@@ -65,11 +65,9 @@ const Footer = () => {
                       BRAND MARKETING TEAM
                     </Typography>
                   </Box>
-                  <Box>
                     <Cardtext style={{ fontWeight: 400, maxWidth: '80%' }}>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
                     </Cardtext>
-                  </Box>
                   <Box>
                     <Cardtext2>10/10</Cardtext2>
                     <Cardtext>Overall Rating</Cardtext>
@@ -81,9 +79,9 @@ const Footer = () => {
               </Box>
             </Grid>
             <Grid item lg={7} md={8} xs={12} className={style.loop} >
-              <Box display="flex" flexWrap="wrap" gap={9} className={style.footerGap2} >
+              <Box display="flex" flexWrap="wrap" gap={8} className={style.footerGap2} >
                 {sections.map((section, index) => (
-                  <Box key={index} className={style.sectionBox} sx={{pb:5}}>
+                  <Box key={index} className={style.sectionBox} sx={{ pb: 5 }}>
                     <Cardtext2 className={style.sectionTitle}>
                       {section.title}
                     </Cardtext2>
@@ -100,7 +98,7 @@ const Footer = () => {
           <Box display={"flex"} flexDirection={"column"} gap={5} className={style.footerGap2}>
             <Box sx={{ border: '0.75px solid #ebebeb' }}></Box>
             <Grid container>
-              <Grid item lg={5} md={5} xs={12} sx={{ display: 'flex', gap: '21px',whiteSpace:'nowrap' }} className={style.footerend}>
+              <Grid item lg={5} md={5} xs={12} sx={{ display: 'flex', gap: '21px', whiteSpace: 'nowrap' }} className={style.footerend}>
                 {footerLinks.map((link, index) => (
                   <Link key={index} href={'#'} style={{ fontSize: 14, lineHeight: 3, fontFamily: 'Poppins', display: 'flex', color: 'black', textDecoration: 'none' }}>
                     {link.name}
@@ -110,7 +108,7 @@ const Footer = () => {
               <Grid item lg={7} md={12} xs={12}>
                 <Box display="flex" justifyContent="flex-end" gap={2} className={style.iconfive}>
                   {socialIcons.map((social, index) => (
-                    <Box key={index} padding={1.2} sx={{ lineHeight:0.7, boxShadow: '0px 1px 9px -1px #403c3c', background: 'white', border: '1px solid transparent', borderRadius: '50%', textAlign: 'center' }}>
+                    <Box key={index} padding={1.2} sx={{ lineHeight: 0.7, boxShadow: '0px 1px 9px -1px #403c3c', background: 'white', border: '1px solid transparent', borderRadius: '50%', textAlign: 'center' }}>
                       {social.icon}
                     </Box>
                   ))}
