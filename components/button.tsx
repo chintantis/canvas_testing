@@ -15,6 +15,7 @@ const GooglePlayBadge: React.FC<GooglePlayBadgeProps> = ({ icon, preText, mainTe
             sx={{ background: 'white' }}
             borderRadius={3}
             height={55}
+            width={180}
         >
             <Box display={'flex'} p={'10px 11px'}>
                 <Box display={"flex"} alignItems={"center"}>

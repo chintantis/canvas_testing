@@ -8,10 +8,9 @@ const ComTwo = () => {
 
     return (
         <>
-            <Box className="container" display={'flex'} flexDirection={'column'} gap={2}>
-                <Box display={'flex'} flexDirection={'column'} gap={10}  className={style.twoGap}>
-                    <Box></Box>
-                    <Box display={'flex'} alignItems={'center'} flexDirection={'column'} gap={3}>
+            <Box className="container" display={'flex'} flexDirection={'column'} gap={2} >
+                <Box display={'flex'} flexDirection={'column'} gap={10} className={style.twoGap}>
+                    <Box display={'flex'} alignItems={'center'} flexDirection={'column'} gap={3} sx={{ pt: 10 }}>
                         <Medium_text lineHeight={'1.1'} width={'58%'} className={style.title}>Join the biggest community
                             of Travellers</Medium_text>
                         <Box justifyContent={'space-around'} display={'flex'}>
@@ -20,7 +19,7 @@ const ComTwo = () => {
                         </Box>
                     </Box>
                 </Box>
-                <Box display={'flex'} flexDirection={'column'} gap={10} className={style.twoGap} sx={{mb:9}}>
+                <Box display={'flex'} flexDirection={'column'} gap={10} className={style.twoGap}>
                     <Box className={style.bgContent} display={'flex'} justifyContent={'center'}>
                     </Box>
                 </Box>

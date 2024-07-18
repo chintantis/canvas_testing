@@ -5,7 +5,7 @@ import style from './body.module.css'
 
 const Comfive = () => {
     const data = [
-        { title: 'DJ', item: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do' },
+        { title: 'DJ', item: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do amet, ' },
         { title: 'Musician', item: 'Sed ut perspiciatis unde omnis iste natus error sit ' },
         { title: 'Artist', item: 'At vero eos et accusamus et iusto odio dignissimos' },
         { title: 'Performer', item: 'On the other hand, we denounce with righteous indignation' },
@@ -22,13 +22,13 @@ const Comfive = () => {
 
     const getBoxDimensions = () => {
         if (isSmallScreen) {
-            return { width: '100%', height: '150px' };
+            return { width: '100%' };
         } else if (isMediumScreen) {
-            return { width: 'calc(33% - 0px)', height: '200px' };
+            return { width: 'calc(33% - 0px)'};
         } else if (isLargeScreen) {
-            return { width: 'calc(16% - 0px)', height: '250px' };
+            return { width: 'calc(17% - 0px)'};
         } else {
-            return { width: 'calc(16% - 0px)', height: '250px' };
+            return { width: 'calc(17% - 0px)'};
         }
     };
 
@@ -44,10 +44,10 @@ const Comfive = () => {
                         ut labore et dolore magna aliqua.
                     </Cardtext>
                 </Box>
-                <Box display={'flex'} gap={18.8} flexWrap={'wrap'} className={style.gapFive}>
+                <Box display={'flex'} gap={9} flexWrap={'wrap'} justifyContent={'space-between'} className={style.gapFive}>
                     {data.map((entry, index) => (
-                        <Box key={index} width={boxDimensions.width} height={boxDimensions.height} className={style.widthFive}>
-                            <Box height={'75%'} className={style.heightFive} border={'8px solid #4CA1FF1F'} boxShadow={'0px 0px 8px -1px gainsboro'} borderRadius={10}>
+                        <Box key={index} width={boxDimensions.width} className={style.widthFive}>
+                            <Box height={200} className={style.heightFive} border={'8px solid #4CA1FF1F'} boxShadow={'0px 0px 8px -1px gainsboro'} borderRadius={10}>
                                 <Box height={'100%'} boxShadow={'1px 0px 15px -1px gainsboro inset'} borderRadius={8}>
                                 </Box>
                             </Box>
@@ -55,7 +55,7 @@ const Comfive = () => {
                                 <Medium_text style={{ fontSize: 30, textAlign: 'center', padding: '6px 0' }}>
                                     {entry.title}
                                 </Medium_text>
-                                <Cardtext style={{ textAlign: 'center', fontSize: 18, fontWeight: 400 }}>
+                                <Cardtext style={{ textAlign: 'center'}}>
                                     {entry.item}
                                 </Cardtext>
                             </Box>
@@ -63,7 +63,7 @@ const Comfive = () => {
                     ))}
                 </Box>
                 <Box>
-                    <Box sx={{ pt: 10 }} className={style.fiveGapB} display={'flex'} flexDirection={'column'} alignContent={'space-around'} flexWrap={'wrap'}>
+                    <Box className={style.fiveGapB} display={'flex'} flexDirection={'column'} alignContent={'space-around'} flexWrap={'wrap'}>
                         <button className='button'>VIEW MORE</button>
                     </Box>
                 </Box>

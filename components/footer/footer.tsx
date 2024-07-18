@@ -100,7 +100,7 @@ const Footer = () => {
           <Box display={"flex"} flexDirection={"column"} gap={5} className={style.footerGap2}>
             <Box sx={{ border: '0.75px solid #ebebeb' }}></Box>
             <Grid container>
-              <Grid item lg={5} md={5} xs={12} sx={{ display: 'flex', gap: '21px' }} className={style.footerend}>
+              <Grid item lg={5} md={5} xs={12} sx={{ display: 'flex', gap: '21px',whiteSpace:'nowrap' }} className={style.footerend}>
                 {footerLinks.map((link, index) => (
                   <Link key={index} href={'#'} style={{ fontSize: 14, lineHeight: 3, fontFamily: 'Poppins', display: 'flex', color: 'black', textDecoration: 'none' }}>
                     {link.name}
@@ -108,7 +108,7 @@ const Footer = () => {
                 ))}
               </Grid>
               <Grid item lg={7} md={12} xs={12}>
-                <Box display="flex" justifyContent="flex-end" gap={2}>
+                <Box display="flex" justifyContent="flex-end" gap={2} className={style.iconfive}>
                   {socialIcons.map((social, index) => (
                     <Box key={index} padding={1.2} sx={{ lineHeight:0.7, boxShadow: '0px 1px 9px -1px #403c3c', background: 'white', border: '1px solid transparent', borderRadius: '50%', textAlign: 'center' }}>
                       {social.icon}

@@ -73,7 +73,7 @@ const ComFour = () => {
         <>
             <Box display={'flex'} flexDirection={'column'} gap={8} className={style.fourGap} sx={{pt:10}}>
                 <Box className={style.bgimg} sx={{pb:8}}>
-                    <Box className='container' display={'flex'} flexDirection={'column'} gap={5} sx={{pt:5}}>
+                    <Box className="container" display={'flex'} flexDirection={'column'} gap={5} sx={{pt:5}}>
                         <Box>
                             <Medium_text>
                                 Plans for all sizes

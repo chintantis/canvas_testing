@@ -2,13 +2,16 @@
   .loop {
     display: block;
   }
-  .footerend{
+  .footerend {
     display: block;
   }
-  .footerGap{
+  .footerGap {
     gap: 15px;
   }
-  .footerGap2{
+  .footerGap2 {
     gap: 25px;
+  }
+  .iconfive {
+    justify-content: center;
   }
 }

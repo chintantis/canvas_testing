@@ -13,11 +13,7 @@ ol {
   list-style: none;
   padding: 0;
 }
-.container {
-  width: 100%;
-  max-width: 93%;
-  margin: auto;
-}
+
 .button {
   background: linear-gradient(#8a5ef7, #492dac);
   border: 0;
@@ -34,4 +30,29 @@ ol {
 }
 .Medium_text2 {
   font-family: "Kumbh Sans", sans-serif;
+}
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px; 
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .container {
+    max-width: 93%;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    max-width: 93%;
+  }
 }

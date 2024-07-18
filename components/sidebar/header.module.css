@@ -76,6 +76,9 @@
   }
   .mdside{
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
   }
 }
 

@@ -24,14 +24,17 @@
 }
 .containerEight {
   width: 100%;
-  max-width: 91%;
+  max-width: 1200px;
   margin: auto;
 }
 .bgContent {
   background-image: url("../../public/Content.jpg");
   background-repeat: no-repeat;
-  background-size: contain;
-  height: 500px;
+  background-size: cover;
+  height: 100%;
+  min-height: 500px;
+  width: 100%;
+  min-width: fit-content;
 }
 
 .bgimg2 {
@@ -79,7 +82,16 @@
   bottom: 0;
   right: 30%;
 }
-
+.twoContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+}
+.ThreeContainer {
+  width: 100%;
+  max-width: 1255px;
+  margin: auto;
+}
 @media only screen and (max-width: 1192px) {
   .resBox {
     display: none;
@@ -91,13 +103,13 @@
     width: 100%;
     text-align: center;
   }
-  .bgContent {
-    height: 175px;
-  }
   .container {
     width: 100%;
     max-width: 93%;
     margin: auto;
+  }
+  .ThreeContainer {
+    max-width: 93%;
   }
   .text {
     width: 100%;
@@ -109,14 +121,18 @@
     width: 90%;
     padding-bottom: 85px;
   }
+  .bgContent {
+    background-size: contain;
+    min-height: 422px;
+  }
+  .twoContainer {
+    max-width: 93%;
+  }
 }
 @media only screen and (max-width: 1190px) {
-  .bgContent {
-    height: 400px;
-  }
   .container {
     width: 100%;
-    max-width: 85%;
+    max-width: 93%;
     margin: auto;
   }
   .colorBox {
@@ -126,14 +142,11 @@
     flex-direction: column;
     gap: 35px;
   }
-  .gapFive {
-    justify-content: space-around;
-  }
   .widthFive {
     width: 35%;
   }
-  .fiveGapB{
-    padding-top: 200px;
+  .ThreeContainer {
+    max-width: 93%;
   }
 }
 @media only screen and (max-width: 540px) {
@@ -147,13 +160,18 @@
     height: 100%;
   }
   .bgContent {
-    height: 175px;
+    background-size: contain;
+    min-height: 257px;
+  }
+  .twoContainer {
+    max-width: 93%;
   }
   .container {
     width: 100%;
     max-width: 93%;
     margin: auto;
   }
+
   .width {
     width: 100%;
   }
@@ -217,10 +235,10 @@
     left: 0;
   }
   .heightFive {
-    height: 160%;
+    height: 200px;
   }
   .gapFive {
-    gap: 250px;
+    gap: 50px;
   }
   .fiveGapB {
     gap: 186px;
@@ -245,9 +263,17 @@
     text-align: center;
   }
   .widthFive {
-    width: 90%;
+    width: 95%;
   }
   .mdside {
     justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+  }
+  .ThreeContainer {
+    width: 100%;
+    max-width: 93%;
+    margin: auto;
   }
 }

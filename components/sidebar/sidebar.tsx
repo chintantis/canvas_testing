@@ -80,9 +80,8 @@ const SideBar: React.FC<SideBarProps> = () => {
     );
     return (
         <>
-
             <Box className={style.bgimg}>
-                <Box className={style.container}>
+                <Box className="container">
                     <Box display={'flex'} flexDirection={'column'} gap={3}>
                         <Box></Box>
                         <Box sx={{ display: 'flex' }}>
@@ -121,23 +120,19 @@ const SideBar: React.FC<SideBarProps> = () => {
                                     </Medium_text>
                                 </Box>
                                 <Cardtext fontSize={20} className={style.para} color={'#474747'} lineHeight={2} fontFamily={"'Poppins', 'sans-serif'"} >Empowering  connection between Clients and Vendors</Cardtext>
-                                <Box display={'flex'} flexDirection={'column'} gap={6} sx={{pt:5}}>
-                                    <Grid container gap={3} className={style.mdside}>
-                                        <Grid item lg={4.4} md={5} sm={3} xs={12} className={style.appbuttons}>
-                                            <GooglePlayBadge
-                                                icon={icon}
-                                                preText="Available on the"
-                                                mainText="Google Play"
-                                            />
-                                        </Grid>
-                                        <Grid item lg={4.4} md={5} sm={3} xs={12} className={style.appbuttons}>
-                                            <GooglePlayBadge
-                                                icon={<AppleIcon style={{ fontSize: 35, paddingRight: '8px' }} />}
-                                                preText="Download on the"
-                                                mainText="App Storee"
-                                            />
-                                        </Grid>
-                                    </Grid>
+                                <Box display={'flex'} flexDirection={'column'} gap={6} sx={{ pt: 5 }}>
+                                    <Box className={style.mdside} display={'flex'} sx={{ flexDirection: 'row' }} gap={4}>
+                                        <GooglePlayBadge
+                                            icon={icon}
+                                            preText="Available on the"
+                                            mainText="Google Play"
+                                        />
+                                        <GooglePlayBadge
+                                            icon={<AppleIcon style={{ fontSize: 38, paddingRight: '8px' }} />}
+                                            preText="Download on the"
+                                            mainText="App Store"
+                                        />
+                                    </Box>
                                     <Grid container gap={6} className={style.Three} sx={{ pb: 9 }}>
                                         <Grid item lg={3} md={4} xs={12}>
                                             <Medium_text2>16K+</Medium_text2>

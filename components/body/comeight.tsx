@@ -13,43 +13,35 @@ const Comeight = () => {
     );
     return (
         <>
-            <Box>
-                <Grid container>
-                    <Grid item lg={9} md={9} xs={12} sx={{ backgroundColor: '#4ca1ff' }}>
-                        <Box className={style.bgimgg}>
-                            <Box className={style.containerEight} display={'flex'} flexDirection={'column'} gap={8}>
-                                <Box></Box>
-                                <Box className={style.Eighttext}>
-                                    <Medium_text sx={{ fontSize: 35, width: '35%', textAlign: 'left', color: 'white' }}>Download the Avendy
-                                        app Today!</Medium_text>
-                                    <Cardtext width={'44%'} style={{ fontSize: 15, color: 'white' }}>You can download the Avendy app on the Google play store on
-                                        Apple store.</Cardtext>
+            <Grid container className={style.containerEight}>
+                <Grid item lg={9} md={9} xs={12} sx={{ backgroundColor: '#4ca1ff' }}>
+                    <Box className={style.bgimgg}>
+                        <Box display={'flex'} flexDirection={'column'} gap={8} paddingTop={9} paddingBottom={9}>
+                            <Box className={style.Eighttext}>
+                                <Medium_text sx={{ fontSize: 35, width: '35%', textAlign: 'left', color: 'white' }}>Download the Avendy
+                                    app Today!</Medium_text>
+                                <Cardtext width={'44%'} style={{ fontSize: 15, color: 'white' }}>You can download the Avendy app on the Google play store on
+                                    Apple store.</Cardtext>
+                            </Box>
+                            <Box>
+                                <Box className={style.mdside} display={'flex'} sx={{ flexDirection: 'row' }} gap={4}>
+                                    <GooglePlayBadge
+                                        icon={icon}
+                                        preText="Available on the"
+                                        mainText="Google Play"
+                                    />
+                                    <GooglePlayBadge
+                                        icon={<AppleIcon style={{ fontSize: 38, paddingRight: '8px' }} />}
+                                        preText="Download on the"
+                                        mainText="App Store"
+                                    />
                                 </Box>
-                                <Box>
-                                    <Grid container gap={3} className={style.mdside}>
-                                        <Grid item lg={2.5} md={3.6} sm={3.3} xs={6.3} className={style.appbuttons}>
-                                            <GooglePlayBadge
-                                                icon={icon}
-                                                preText="Available on the"
-                                                mainText="Google Play"
-                                            />
-                                        </Grid>
-                                        <Grid item lg={2.5} md={3.6} sm={3.3} xs={6.3} className={style.appbuttons}>
-                                            <GooglePlayBadge
-                                                icon={<AppleIcon style={{ fontSize: 35, paddingRight: '8px' }} />}
-                                                preText="Download on the"
-                                                mainText="App Storee"
-                                            />
-                                        </Grid>
-                                    </Grid>
-                                </Box>
-                                <Box></Box>
                             </Box>
                         </Box>
-                    </Grid >
-                    <Grid item lg={3} md={3} xs={3} className={style.background}></Grid >
+                    </Box>
                 </Grid >
-            </Box >
+                <Grid item lg={3} md={3} xs={3} className={style.background}></Grid >
+            </Grid >
         </>
     )
 
