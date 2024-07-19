@@ -113,7 +113,7 @@ const ComThree = () => {
     ];
     return (
         <>
-            <Box className="container">
+            <Box className="container" sx={{pt:6}}>
                 <Grid container>
                     <Box display={'flex'} gap={14} className={style.column}>
                         <Grid item lg={6} md={12} sm={12} xs={12} className={style.Box}>
